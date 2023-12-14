@@ -10,7 +10,9 @@ function App() {
 
     <div>
 
-      <h1> Hvad er din hunds navn?</h1>
+      <h1> BeBuggy</h1>
+      <p> Hvad er din hunds navn?</p>
+      
       
 
     </div>
