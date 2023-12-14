@@ -126,33 +126,35 @@
   padding: 20px;
 }
 
-/* The slider itself */
+
 .slider {
-  -webkit-appearance: none;
+  appearance: none;
   width: 95%;
-  height: 40px; /* Can be adjusted */
-  background: #86c28e; /* Slider background */
+  height: 40px;
+  background: #86c28e;
   outline: none;
-  opacity: 0.7; /* Make the slider slightly transparent */
-  -webkit-transition: 0.2s; /* Transition for smoother movement */
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
   transition: opacity 0.2s;
   border-radius: 2rem;
 }
 
-.react-slider-thumb {
-  background-color: #eab9b8; /* Pink color */
 
-  height: 40px; /* Height of the thumb */
-  width: 95px; /* Width of the thumb, adjust if needed */
-  border-radius: 1.5rem; /* Fully rounded edges */
+
+.react-slider-thumb {
+  background-color: #eab9b8;
+
+  height: 40px;
+  width: 95px;
+  border-radius: 1.5rem;
   text-align: center;
-  line-height: 35px; /* To vertically center the text in the thumb */
+  line-height: 35px;
   cursor: grab;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   outline: none;
 }
 
 .react-slider-thumb:active {
-  background-color: #ffb6c1; /* Lighter pink color when active */
+  background-color: #ffb6c1;
   cursor: grabbing;
 }

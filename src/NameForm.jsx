@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { useDogForm } from './dogFormContext'; // Adjust the import path as necessary
+import { useDogForm } from './dogFormContext'; 
 
-function NameForm() {
+function NameForm({ goToNextStep }) {
     const [name, setName] = useState('');
     const { updateData } = useDogForm();
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        updateData({ name }); // Updates the context with the new name
-        // Here you might navigate to the next form step or handle the name submission
+        updateData({ name });
+        goToNextStep(); 
     }
 
     return (
