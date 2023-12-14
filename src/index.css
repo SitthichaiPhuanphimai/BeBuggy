@@ -10,14 +10,7 @@
  
 }
 
-#container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10%;
-  font-size: 3em;
-  
-}
+
 
 
 
@@ -25,6 +18,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  width: 450px;
+  height: 450px;
 }
 
 #logo{
@@ -40,7 +35,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
   
   font-size: 3em;
 
@@ -48,3 +43,51 @@
 }
 
 
+#nameForm div button {
+  background-color: #86C28E ; 
+  font-size: 0.5em;
+  color: white;
+  border: 20px;
+  border-radius: 20px;
+  padding: 30px;
+  margin: auto;
+  display: block;
+  font-family: inherit;
+  
+}
+
+#nameForm div button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+#nameForm input {
+  font-size: 0.5em; 
+  padding: 10px; 
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
+  background-color: #86C28E ; 
+  color:#FFAF1F ; 
+  font-family: inherit; 
+  margin-bottom: 20px;
+}
+
+#nameForm button:hover {
+  background-color: #86C28E;
+}
+
+#h1{
+  font-size: 3em;
+  text-align: center;
+  color: #ffff;
+  background-color: #226F54 ;
+  margin-top: 10%;
+}
+
+#h2{
+
+  font-size: 2em;
+  text-align: center;
+  color: #ffff;
+  background-color: #226F54 ;
+}

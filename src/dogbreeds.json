@@ -1,0 +1,992 @@
+[
+  {
+    "RACE": "Afghansk Mynde",
+    "Gennmsnit (KG)": 25,
+    "Fra": 22.7,
+    "Til": 27.3
+  },
+  {
+    "RACE": "Airedale Terrier",
+    "Gennmsnit (KG)": 21.6,
+    "Fra": 18.2,
+    "Til": 25
+  },
+  {
+    "RACE": "Alaskan Malamute",
+    "Gennmsnit (KG)": 36.35,
+    "Fra": 34.1,
+    "Til": 38.6
+  },
+  {
+    "RACE": "Amerikansk Cocker Spaniel",
+    "Gennmsnit (KG)": 10,
+    "Fra": 8,
+    "Til": 12
+  },
+  {
+    "RACE": "Appenzeller Sennenhund",
+    "Gennmsnit (KG)": 29.5,
+    "Fra": 27,
+    "Til": 32
+  },
+  {
+    "RACE": "Australsk Terrier",
+    "Gennmsnit (KG)": 8,
+    "Fra": 6,
+    "Til": 10
+  },
+  {
+    "RACE": "Basenji",
+    "Gennmsnit (KG)": 10.45,
+    "Fra": 10,
+    "Til": 10.9
+  },
+  {
+    "RACE": "Basset Fauve De Bretagne",
+    "Gennmsnit (KG)": 10.5,
+    "Fra": 10,
+    "Til": 11
+  },
+  {
+    "RACE": "Basset Hound",
+    "Gennmsnit (KG)": 26,
+    "Fra": 23,
+    "Til": 29
+  },
+  {
+    "RACE": "Beagle",
+    "Gennmsnit (KG)": 12.75,
+    "Fra": 10,
+    "Til": 15.5
+  },
+  {
+    "RACE": "Bearded Collie",
+    "Gennmsnit (KG)": 22.05,
+    "Fra": 19.1,
+    "Til": 25
+  },
+  {
+    "RACE": "Bedlington Terrier",
+    "Gennmsnit (KG)": 10,
+    "Fra": 9.1,
+    "Til": 10.9
+  },
+  {
+    "RACE": "Berner Sennenhund",
+    "Gennmsnit (KG)": 47.5,
+    "Fra": 40,
+    "Til": 55
+  },
+  {
+    "RACE": "Bichon Frisé",
+    "Gennmsnit (KG)": 3.85,
+    "Fra": 3.2,
+    "Til": 4.5
+  },
+  {
+    "RACE": "Bichon Havanaise",
+    "Gennmsnit (KG)": 6,
+    "Fra": 5.5,
+    "Til": 6.5
+  },
+  {
+    "RACE": "Blandingshund",
+    "Gennmsnit (KG)": 0,
+    "Fra": 0,
+    "Til": 0
+  },
+  {
+    "RACE": "Blodhund",
+    "Gennmsnit (KG)": 45,
+    "Fra": 42,
+    "Til": 48
+  },
+  {
+    "RACE": "Border Collie",
+    "Gennmsnit (KG)": 17.5,
+    "Fra": 15,
+    "Til": 20
+  },
+  {
+    "RACE": "Border Terrier",
+    "Gennmsnit (KG)": 6.15,
+    "Fra": 5.5,
+    "Til": 6.8
+  },
+  {
+    "RACE": "Borzoi",
+    "Gennmsnit (KG)": 38.6,
+    "Fra": 34,
+    "Til": 43.2
+  },
+  {
+    "RACE": "Boston Terrier",
+    "Gennmsnit (KG)": 9.1,
+    "Fra": 6.8,
+    "Til": 11.4
+  },
+  {
+    "RACE": "Bouvier des Flandres",
+    "Gennmsnit (KG)": 33.65,
+    "Fra": 27.3,
+    "Til": 40
+  },
+  {
+    "RACE": "Boxer",
+    "Gennmsnit (KG)": 28.4,
+    "Fra": 25,
+    "Til": 31.8
+  },
+  {
+    "RACE": "Bracco Italiano",
+    "Gennmsnit (KG)": 39,
+    "Fra": 38,
+    "Til": 40
+  },
+  {
+    "RACE": "Breton",
+    "Gennmsnit (KG)": 18,
+    "Fra": 15,
+    "Til": 21
+  },
+  {
+    "RACE": "Briard",
+    "Gennmsnit (KG)": 34.05,
+    "Fra": 29.5,
+    "Til": 38.6
+  },
+  {
+    "RACE": "Bull Terrier",
+    "Gennmsnit (KG)": 20.45,
+    "Fra": 18.2,
+    "Til": 22.7
+  },
+  {
+    "RACE": "Bullmastiff",
+    "Gennmsnit (KG)": 51.15,
+    "Fra": 43.2,
+    "Til": 59.1
+  },
+  {
+    "RACE": "Cairn Terrier",
+    "Gennmsnit (KG)": 6.15,
+    "Fra": 5,
+    "Til": 7.3
+  },
+  {
+    "RACE": "Cavalier King Charles Spaniel",
+    "Gennmsnit (KG)": 6.6,
+    "Fra": 5,
+    "Til": 8.2
+  },
+  {
+    "RACE": "Cèsky Terrier",
+    "Gennmsnit (KG)": 7.5,
+    "Fra": 7,
+    "Til": 8
+  },
+  {
+    "RACE": "Chesapeake Bay Retriever",
+    "Gennmsnit (KG)": 30.5,
+    "Fra": 25,
+    "Til": 36
+  },
+  {
+    "RACE": "Chihuahua Korthåret",
+    "Gennmsnit (KG)": 2.05,
+    "Fra": 1.7,
+    "Til": 2.4
+  },
+  {
+    "RACE": "Chihuahua Langhåret",
+    "Gennmsnit (KG)": 2.25,
+    "Fra": 2,
+    "Til": 2.5
+  },
+  {
+    "RACE": "Chinese Crested/Power Puff",
+    "Gennmsnit (KG)": 5,
+    "Fra": 4.5,
+    "Til": 5.5
+  },
+  {
+    "RACE": "Chow Chow",
+    "Gennmsnit (KG)": 27.5,
+    "Fra": 25,
+    "Til": 30
+  },
+  {
+    "RACE": "Clumber Spaniel",
+    "Gennmsnit (KG)": 30,
+    "Fra": 26,
+    "Til": 34
+  },
+  {
+    "RACE": "Cocker Spaniel",
+    "Gennmsnit (KG)": 13.2,
+    "Fra": 12.3,
+    "Til": 14.1
+  },
+  {
+    "RACE": "Collie",
+    "Gennmsnit (KG)": 27.5,
+    "Fra": 25,
+    "Til": 30
+  },
+  {
+    "RACE": "Coton de Tulear",
+    "Gennmsnit (KG)": 5.5,
+    "Fra": 5,
+    "Til": 6
+  },
+  {
+    "RACE": "Curly Coated Retriever",
+    "Gennmsnit (KG)": 35.5,
+    "Fra": 32,
+    "Til": 39
+  },
+  {
+    "RACE": "Dalmatiner",
+    "Gennmsnit (KG)": 25.5,
+    "Fra": 23,
+    "Til": 28
+  },
+  {
+    "RACE": "Dandie Dinmont Terrier",
+    "Gennmsnit (KG)": 7.95,
+    "Fra": 7.7,
+    "Til": 8.2
+  },
+  {
+    "RACE": "Dansk/Svensk Gårdhund",
+    "Gennmsnit (KG)": 9,
+    "Fra": 8,
+    "Til": 10
+  },
+  {
+    "RACE": "Dobermann",
+    "Gennmsnit (KG)": 34,
+    "Fra": 30,
+    "Til": 38
+  },
+  {
+    "RACE": "Dværgpinscher",
+    "Gennmsnit (KG)": 4,
+    "Fra": 3,
+    "Til": 5
+  },
+  {
+    "RACE": "Dværgschnauzer",
+    "Gennmsnit (KG)": 7,
+    "Fra": 6,
+    "Til": 8
+  },
+  {
+    "RACE": "Engelsk Bulldog",
+    "Gennmsnit (KG)": 23.85,
+    "Fra": 22.7,
+    "Til": 25
+  },
+  {
+    "RACE": "Engelsk Setter",
+    "Gennmsnit (KG)": 27.25,
+    "Fra": 25,
+    "Til": 29.5
+  },
+  {
+    "RACE": "Engelsk Springer Spaniel",
+    "Gennmsnit (KG)": 23.5,
+    "Fra": 22,
+    "Til": 25
+  },
+  {
+    "RACE": "English Toy Terrier",
+    "Gennmsnit (KG)": 3.15,
+    "Fra": 2.7,
+    "Til": 3.6
+  },
+  {
+    "RACE": "Field Spaniel",
+    "Gennmsnit (KG)": 20.5,
+    "Fra": 16,
+    "Til": 25
+  },
+  {
+    "RACE": "Finsk Lapphund",
+    "Gennmsnit (KG)": 13.5,
+    "Fra": 12,
+    "Til": 15
+  },
+  {
+    "RACE": "Flat Coated Retriever",
+    "Gennmsnit (KG)": 29.55,
+    "Fra": 27.3,
+    "Til": 31.8
+  },
+  {
+    "RACE": "Foxhound",
+    "Gennmsnit (KG)": 33.2,
+    "Fra": 30.9,
+    "Til": 35.5
+  },
+  {
+    "RACE": "Fox Terrier, glathåret",
+    "Gennmsnit (KG)": 9,
+    "Fra": 8,
+    "Til": 10
+  },
+  {
+    "RACE": "Fox Terrier, ruhåret",
+    "Gennmsnit (KG)": 10,
+    "Fra": 9,
+    "Til": 11
+  },
+  {
+    "RACE": "Fransk Bulldog",
+    "Gennmsnit (KG)": 10.5,
+    "Fra": 8,
+    "Til": 13
+  },
+  {
+    "RACE": "Glen of Imaal Terrier",
+    "Gennmsnit (KG)": 15.5,
+    "Fra": 15,
+    "Til": 16
+  },
+  {
+    "RACE": "Golden Retriever",
+    "Gennmsnit (KG)": 29.55,
+    "Fra": 25,
+    "Til": 34.1
+  },
+  {
+    "RACE": "Gordon Setter",
+    "Gennmsnit (KG)": 27.5,
+    "Fra": 25,
+    "Til": 30
+  },
+  {
+    "RACE": "Grand Danois",
+    "Gennmsnit (KG)": 53.45,
+    "Fra": 45.5,
+    "Til": 61.4
+  },
+  {
+    "RACE": "Gravhund, korthåret",
+    "Gennmsnit (KG)": 7.5,
+    "Fra": 7,
+    "Til": 8
+  },
+  {
+    "RACE": "Gravhund, langhåret",
+    "Gennmsnit (KG)": 7.5,
+    "Fra": 7,
+    "Til": 8
+  },
+  {
+    "RACE": "Gravhund, langhåret dværg",
+    "Gennmsnit (KG)": 4.75,
+    "Fra": 4,
+    "Til": 5.5
+  },
+  {
+    "RACE": "Gravhund, langhåret miniature",
+    "Gennmsnit (KG)": 3.25,
+    "Fra": 3,
+    "Til": 3.5
+  },
+  {
+    "RACE": "Gravhund, ruhåret",
+    "Gennmsnit (KG)": 7.5,
+    "Fra": 7,
+    "Til": 8
+  },
+  {
+    "RACE": "Gravhund, ruhåret dværg",
+    "Gennmsnit (KG)": 4.75,
+    "Fra": 4,
+    "Til": 5.5
+  },
+  {
+    "RACE": "Gravhund, ruhåret miniature",
+    "Gennmsnit (KG)": 3.5,
+    "Fra": 3,
+    "Til": 4
+  },
+  {
+    "RACE": "Greyhound",
+    "Gennmsnit (KG)": 29.55,
+    "Fra": 22.7,
+    "Til": 36.4
+  },
+  {
+    "RACE": "Griffon Belge",
+    "Gennmsnit (KG)": 4.75,
+    "Fra": 4.5,
+    "Til": 5
+  },
+  {
+    "RACE": "Griffon Bruxellois",
+    "Gennmsnit (KG)": 4.75,
+    "Fra": 4.5,
+    "Til": 5
+  },
+  {
+    "RACE": "Groenendael",
+    "Gennmsnit (KG)": 24.5,
+    "Fra": 22,
+    "Til": 27
+  },
+  {
+    "RACE": "Grosser Schweizer Sennenhund",
+    "Gennmsnit (KG)": 52.5,
+    "Fra": 45,
+    "Til": 60
+  },
+  {
+    "RACE": "Grønlandshund",
+    "Gennmsnit (KG)": 35,
+    "Fra": 30,
+    "Til": 40
+  },
+  {
+    "RACE": "Howawart",
+    "Gennmsnit (KG)": 42,
+    "Fra": 38,
+    "Til": 46
+  },
+  {
+    "RACE": "Hønsehund, korthåret",
+    "Gennmsnit (KG)": 27.5,
+    "Fra": 25,
+    "Til": 30
+  },
+  {
+    "RACE": "Hønsehund, langhåret",
+    "Gennmsnit (KG)": 27.5,
+    "Fra": 25,
+    "Til": 30
+  },
+  {
+    "RACE": "Hønsehund, ruhåret",
+    "Gennmsnit (KG)": 27.5,
+    "Fra": 25,
+    "Til": 30
+  },
+  {
+    "RACE": "Irish Water Spaniel",
+    "Gennmsnit (KG)": 24,
+    "Fra": 21.6,
+    "Til": 26.4
+  },
+  {
+    "RACE": "Irsk Setter",
+    "Gennmsnit (KG)": 28.4,
+    "Fra": 25,
+    "Til": 31.8
+  },
+  {
+    "RACE": "Irsk Terrier",
+    "Gennmsnit (KG)": 11.35,
+    "Fra": 10,
+    "Til": 12.7
+  },
+  {
+    "RACE": "Irsk Ulvehund",
+    "Gennmsnit (KG)": 64,
+    "Fra": 50,
+    "Til": 78
+  },
+  {
+    "RACE": "Islandsk Fårehund",
+    "Gennmsnit (KG)": 15.5,
+    "Fra": 13,
+    "Til": 18
+  },
+  {
+    "RACE": "Italiensk Mynde",
+    "Gennmsnit (KG)": 3.75,
+    "Fra": 3,
+    "Til": 4.5
+  },
+  {
+    "RACE": "Japanese",
+    "Gennmsnit (KG)": 2,
+    "Fra": 1.5,
+    "Til": 2.5
+  },
+  {
+    "RACE": "Japansk Spids",
+    "Gennmsnit (KG)": 7.5,
+    "Fra": 6,
+    "Til": 9
+  },
+  {
+    "RACE": "Karelsk Bjørnehund",
+    "Gennmsnit (KG)": 26.5,
+    "Fra": 23,
+    "Til": 30
+  },
+  {
+    "RACE": "Keeshond",
+    "Gennmsnit (KG)": 23.75,
+    "Fra": 18,
+    "Til": 29.5
+  },
+  {
+    "RACE": "Kerry Blue Terrier",
+    "Gennmsnit (KG)": 15.9,
+    "Fra": 15,
+    "Til": 16.8
+  },
+  {
+    "RACE": "Kleiner Münsterländer",
+    "Gennmsnit (KG)": 22.5,
+    "Fra": 20,
+    "Til": 25
+  },
+  {
+    "RACE": "Kleinspitz",
+    "Gennmsnit (KG)": 6.5,
+    "Fra": 6,
+    "Til": 7
+  },
+  {
+    "RACE": "Kooikerhondje",
+    "Gennmsnit (KG)": 11,
+    "Fra": 10,
+    "Til": 12
+  },
+  {
+    "RACE": "Labradoodle",
+    "Gennmsnit (KG)": 30,
+    "Fra": 20,
+    "Til": 40
+  },
+  {
+    "RACE": "Labrador Retriever",
+    "Gennmsnit (KG)": 29,
+    "Fra": 25,
+    "Til": 33
+  },
+  {
+    "RACE": "Laekenoise",
+    "Gennmsnit (KG)": 25,
+    "Fra": 22,
+    "Til": 28
+  },
+  {
+    "RACE": "Lagotto Romagnolo",
+    "Gennmsnit (KG)": 14.5,
+    "Fra": 11,
+    "Til": 18
+  },
+  {
+    "RACE": "Lakeland Terrier",
+    "Gennmsnit (KG)": 7.2,
+    "Fra": 6.4,
+    "Til": 8
+  },
+  {
+    "RACE": "Leonberger",
+    "Gennmsnit (KG)": 52.5,
+    "Fra": 45,
+    "Til": 60
+  },
+  {
+    "RACE": "Lhasa Apso",
+    "Gennmsnit (KG)": 6.15,
+    "Fra": 5,
+    "Til": 7.3
+  },
+  {
+    "RACE": "Løwchen",
+    "Gennmsnit (KG)": 6.5,
+    "Fra": 6,
+    "Til": 7
+  },
+  {
+    "RACE": "Malinoise",
+    "Gennmsnit (KG)": 25,
+    "Fra": 20,
+    "Til": 30
+  },
+  {
+    "RACE": "Malteser",
+    "Gennmsnit (KG)": 3.55,
+    "Fra": 3,
+    "Til": 4.1
+  },
+  {
+    "RACE": "Maremma",
+    "Gennmsnit (KG)": 39,
+    "Fra": 38,
+    "Til": 40
+  },
+  {
+    "RACE": "Mastiff",
+    "Gennmsnit (KG)": 67.5,
+    "Fra": 60,
+    "Til": 75
+  },
+  {
+    "RACE": "Mellemschnauzer",
+    "Gennmsnit (KG)": 22.5,
+    "Fra": 20,
+    "Til": 25
+  },
+  {
+    "RACE": "Mops",
+    "Gennmsnit (KG)": 11.5,
+    "Fra": 10,
+    "Til": 13
+  },
+  {
+    "RACE": "Mudi",
+    "Gennmsnit (KG)": 14.5,
+    "Fra": 14,
+    "Til": 15
+  },
+  {
+    "RACE": "Newfoundland",
+    "Gennmsnit (KG)": 59.1,
+    "Fra": 50,
+    "Til": 68.2
+  },
+  {
+    "RACE": "Norfolk Terrier",
+    "Gennmsnit (KG)": 5.9,
+    "Fra": 5,
+    "Til": 6.8
+  },
+  {
+    "RACE": "Norsk Buhund",
+    "Gennmsnit (KG)": 12.5,
+    "Fra": 10,
+    "Til": 15
+  },
+  {
+    "RACE": "Norsk Elghund",
+    "Gennmsnit (KG)": 21.5,
+    "Fra": 18,
+    "Til": 25
+  },
+  {
+    "RACE": "Norwich Terrier",
+    "Gennmsnit (KG)": 5.9,
+    "Fra": 5,
+    "Til": 6.8
+  },
+  {
+    "RACE": "Nova Scotia Duck Tolling Retriever",
+    "Gennmsnit (KG)": 22.5,
+    "Fra": 22,
+    "Til": 23
+  },
+  {
+    "RACE": "Odderhund",
+    "Gennmsnit (KG)": 40,
+    "Fra": 35,
+    "Til": 45
+  },
+  {
+    "RACE": "Old English Sheepdog",
+    "Gennmsnit (KG)": 35,
+    "Fra": 30,
+    "Til": 40
+  },
+  {
+    "RACE": "Papillon",
+    "Gennmsnit (KG)": 3.2,
+    "Fra": 1.4,
+    "Til": 5
+  },
+  {
+    "RACE": "Pekingeser",
+    "Gennmsnit (KG)": 5,
+    "Fra": 4.5,
+    "Til": 5.5
+  },
+  {
+    "RACE": "Petit Basset Griffon Vendéen",
+    "Gennmsnit (KG)": 13.5,
+    "Fra": 12,
+    "Til": 15
+  },
+  {
+    "RACE": "Pharaohund",
+    "Gennmsnit (KG)": 21.6,
+    "Fra": 18.2,
+    "Til": 25
+  },
+  {
+    "RACE": "Pointer",
+    "Gennmsnit (KG)": 25.7,
+    "Fra": 20.5,
+    "Til": 30.9
+  },
+  {
+    "RACE": "Polski Owczarek Nizinny",
+    "Gennmsnit (KG)": 16.5,
+    "Fra": 16,
+    "Til": 17
+  },
+  {
+    "RACE": "Pomeranian",
+    "Gennmsnit (KG)": 2.5,
+    "Fra": 1.8,
+    "Til": 3.2
+  },
+  {
+    "RACE": "Puddel, toy",
+    "Gennmsnit (KG)": 4.55,
+    "Fra": 4.1,
+    "Til": 5
+  },
+  {
+    "RACE": "Puddel, dværg",
+    "Gennmsnit (KG)": 4.5,
+    "Fra": 4,
+    "Til": 5
+  },
+  {
+    "RACE": "Puddel, mellem",
+    "Gennmsnit (KG)": 9,
+    "Fra": 8,
+    "Til": 10
+  },
+  {
+    "RACE": "Puddel, stor",
+    "Gennmsnit (KG)": 22.5,
+    "Fra": 20,
+    "Til": 25
+  },
+  {
+    "RACE": "Puli",
+    "Gennmsnit (KG)": 12.5,
+    "Fra": 10,
+    "Til": 15
+  },
+  {
+    "RACE": "Pyreneerhund",
+    "Gennmsnit (KG)": 47.25,
+    "Fra": 40,
+    "Til": 54.5
+  },
+  {
+    "RACE": "Rhodesian Ridgeback",
+    "Gennmsnit (KG)": 31.85,
+    "Fra": 27.3,
+    "Til": 36.4
+  },
+  {
+    "RACE": "Riesenschnauzer",
+    "Gennmsnit (KG)": 37,
+    "Fra": 34,
+    "Til": 40
+  },
+  {
+    "RACE": "Rottweiler",
+    "Gennmsnit (KG)": 41,
+    "Fra": 34,
+    "Til": 48
+  },
+  {
+    "RACE": "Saluki",
+    "Gennmsnit (KG)": 22.5,
+    "Fra": 20,
+    "Til": 25
+  },
+  {
+    "RACE": "Samojedhund",
+    "Gennmsnit (KG)": 25,
+    "Fra": 22,
+    "Til": 28
+  },
+  {
+    "RACE": "Sankt Bernhardshund",
+    "Gennmsnit (KG)": 66.5,
+    "Fra": 55,
+    "Til": 78
+  },
+  {
+    "RACE": "Schapendoes",
+    "Gennmsnit (KG)": 16.5,
+    "Fra": 14,
+    "Til": 19
+  },
+  {
+    "RACE": "Schipperke",
+    "Gennmsnit (KG)": 6.15,
+    "Fra": 3.2,
+    "Til": 9.1
+  },
+  {
+    "RACE": "Schæferhund",
+    "Gennmsnit (KG)": 34.75,
+    "Fra": 29.5,
+    "Til": 40
+  },
+  {
+    "RACE": "Sealyham Terrier",
+    "Gennmsnit (KG)": 8.6,
+    "Fra": 7.7,
+    "Til": 9.5
+  },
+  {
+    "RACE": "Shetland Sheepdog",
+    "Gennmsnit (KG)": 10.9,
+    "Fra": 8.2,
+    "Til": 13.6
+  },
+  {
+    "RACE": "Shiba Inu",
+    "Gennmsnit (KG)": 11,
+    "Fra": 9,
+    "Til": 13
+  },
+  {
+    "RACE": "Shih Tzu",
+    "Gennmsnit (KG)": 7.3,
+    "Fra": 5.5,
+    "Til": 9.1
+  },
+  {
+    "RACE": "Siberian Husky",
+    "Gennmsnit (KG)": 21.15,
+    "Fra": 15,
+    "Til": 27.3
+  },
+  {
+    "RACE": "Silky Terrier",
+    "Gennmsnit (KG)": 4,
+    "Fra": 3.5,
+    "Til": 4.5
+  },
+  {
+    "RACE": "Skotsk Terrier",
+    "Gennmsnit (KG)": 8.65,
+    "Fra": 7.3,
+    "Til": 10
+  },
+  {
+    "RACE": "Skye Terrier",
+    "Gennmsnit (KG)": 8.05,
+    "Fra": 7,
+    "Til": 9.1
+  },
+  {
+    "RACE": "Soft Coated Wheaten Terrier",
+    "Gennmsnit (KG)": 15.9,
+    "Fra": 15,
+    "Til": 16.8
+  },
+  {
+    "RACE": "Sort Russisk Terrier",
+    "Gennmsnit (KG)": 41,
+    "Fra": 40,
+    "Til": 42
+  },
+  {
+    "RACE": "Sussex Spaniel",
+    "Gennmsnit (KG)": 20.5,
+    "Fra": 18,
+    "Til": 23
+  },
+  {
+    "RACE": "Tervueren",
+    "Gennmsnit (KG)": 27,
+    "Fra": 24,
+    "Til": 30
+  },
+  {
+    "RACE": "Tibetansk Spaniel",
+    "Gennmsnit (KG)": 5.45,
+    "Fra": 4.2,
+    "Til": 6.7
+  },
+  {
+    "RACE": "Tibetansk Terrier",
+    "Gennmsnit (KG)": 10.9,
+    "Fra": 8.2,
+    "Til": 13.6
+  },
+  {
+    "RACE": "Tysk Jagt Terrier",
+    "Gennmsnit (KG)": 8.75,
+    "Fra": 7.5,
+    "Til": 10
+  },
+  {
+    "RACE": "Vizla",
+    "Gennmsnit (KG)": 25,
+    "Fra": 21.8,
+    "Til": 28.2
+  },
+  {
+    "RACE": "Västgötaspids",
+    "Gennmsnit (KG)": 13.5,
+    "Fra": 13,
+    "Til": 14
+  },
+  {
+    "RACE": "Weimaraner",
+    "Gennmsnit (KG)": 25.2,
+    "Fra": 22.7,
+    "Til": 27.7
+  },
+  {
+    "RACE": "Welsh Corgi Cardigan",
+    "Gennmsnit (KG)": 10.55,
+    "Fra": 9.1,
+    "Til": 12
+  },
+  {
+    "RACE": "Welsk Corgi Pembroke",
+    "Gennmsnit (KG)": 9.45,
+    "Fra": 8,
+    "Til": 10.9
+  },
+  {
+    "RACE": "Welsh Springer Spaniel",
+    "Gennmsnit (KG)": 21.5,
+    "Fra": 19,
+    "Til": 24
+  },
+  {
+    "RACE": "Welsh Terrier",
+    "Gennmsnit (KG)": 9,
+    "Fra": 8,
+    "Til": 10
+  },
+  {
+    "RACE": "West Highland White Terrier",
+    "Gennmsnit (KG)": 7.5,
+    "Fra": 6.8,
+    "Til": 8.2
+  },
+  {
+    "RACE": "Whippet",
+    "Gennmsnit (KG)": 9.55,
+    "Fra": 7.3,
+    "Til": 11.8
+  },
+  {
+    "RACE": "Yorkshire Terrier",
+    "Gennmsnit (KG)": 2.3,
+    "Fra": 1.4,
+    "Til": 3.2
+  },
+  {
+    "RACE": "Østrisk Pinscher",
+    "Gennmsnit (KG)": 16,
+    "Fra": 13,
+    "Til": 19
+  },
+  {
+    "RACE": "Anden race",
+    "Gennmsnit (KG)": 0,
+    "Fra": 0,
+    "Til": 0
+  }
+]
