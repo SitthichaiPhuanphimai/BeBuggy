@@ -91,3 +91,44 @@
   color: #ffff;
   background-color: #226F54 ;
 }
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  width: 95%;
+  height: 40px; /* Can be adjusted */
+  background: #86C28E; /* Slider background */
+  outline: none;
+  opacity: 0.7; /* Make the slider slightly transparent */
+  -webkit-transition: .2s; /* Transition for smoother movement */
+  transition: opacity .2s;
+  border-radius: 2rem;
+}
+
+
+
+.react-slider-thumb {
+  background-color: #EAB9B8; /* Pink color */
+  
+  height: 40px; /* Height of the thumb */
+  width: 95px; /* Width of the thumb, adjust if needed */
+  border-radius: 1.5rem; /* Fully rounded edges */
+  text-align: center;
+  line-height: 35px; /* To vertically center the text in the thumb */
+  cursor: grab;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  outline: none;
+}
+
+.react-slider-thumb:active {
+  background-color: #FFB6C1; /* Lighter pink color when active */
+  cursor: grabbing;
+}
