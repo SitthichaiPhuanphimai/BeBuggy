@@ -6,19 +6,14 @@ function App() {
 
   return (
     
-    <div id="container"> 
+    <div> 
 
-    <div>
 
-      <h1> BeBuggy</h1>
-      <p> Hvad er din hunds navn?</p>
-      
-      
-
+     
     </div>
 
+    
 
-    </div>
 
 
       
