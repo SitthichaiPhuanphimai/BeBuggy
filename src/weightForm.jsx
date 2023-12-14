@@ -21,7 +21,9 @@ const WeightSlider = ({ goToNextStep, goToPreviousStep }) => {
 
   return (
     <>
-      <h2>Hvad er {dogData.name}'s vægt?</h2>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+        <h2>Hvad er <span className="dog-name">{dogData.name}</span>'s vægt?</h2>
+      </div>
       <div className="slider-container">
         <Slider
           defaultValue={10}
