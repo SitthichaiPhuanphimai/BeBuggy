@@ -1,18 +1,11 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
 
 :root {
-  font-family: 'Chelsea Market', cursive;
-  
+  font-family: "Chelsea Market", cursive;
+
   color: #ffff;
-  background-color: #226F54 ;
-  
- 
+  background-color: #226f54;
 }
-
-
-
-
 
 #dog {
   position: absolute;
@@ -22,8 +15,7 @@
   height: 450px;
 }
 
-#logo{
-
+#logo {
   position: absolute;
   top: 0;
   right: 0;
@@ -31,65 +23,100 @@
   max-height: 200px;
 }
 
-#nameForm{
-
+#nameForm {
   display: flex;
   align-items: center;
-  justify-content: center;  
-  
-  font-size: 3em;
+  justify-content: center;
 
-  
+  font-size: 3em;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
-#nameForm div button {
-  background-color: #86C28E ; 
+.button-next {
+  background-color: #86c28e;
+  font-size: 0.5em;
+  color: white;
+  border: 20px;
+  border-radius: 20px;
+  margin: auto;
+  padding: 30px;
+  display: block;
+  font-family: inherit;
+}
+
+.button-next-double {
+  background-color: #86c28e;
   font-size: 0.5em;
   color: white;
   border: 20px;
   border-radius: 20px;
   padding: 30px;
-  margin: auto;
   display: block;
   font-family: inherit;
-  
+  padding: 40px 50px;
+  font-size: 1.3em;
 }
 
-#nameForm div button:hover {
+.button-next:hover,
+.button-next-double:hover {
   transform: scale(1.05);
   transition: transform 0.2s;
+  background-color: #86c28e;
+}
+
+.button-back {
+  background-color: #ffaf1f;
+  font-size: 0.5em;
+  color: white;
+  border: 20px;
+  border-radius: 20px;
+  padding: 40px 50px;
+
+  display: block;
+  font-family: inherit;
+  position: center;
+  font-size: 1.3em;
+}
+
+.button-back:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+  background-color: #ffaf1f;
 }
 
 #nameForm input {
-  font-size: 0.5em; 
-  padding: 10px; 
-  border-radius: 5px; 
-  border: 1px solid #ccc; 
-  background-color: #86C28E ; 
-  color:#FFAF1F ; 
-  font-family: inherit; 
+  font-size: 0.5em;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #86c28e;
+  color: #ffaf1f;
+  font-family: inherit;
   margin-bottom: 20px;
 }
 
 #nameForm button:hover {
-  background-color: #86C28E;
+  background-color: #86c28e;
 }
 
-#h1{
+#h1 {
   font-size: 3em;
   text-align: center;
   color: #ffff;
-  background-color: #226F54 ;
+  background-color: #226f54;
   margin-top: 10%;
 }
 
-#h2{
-
+#h2 {
   font-size: 2em;
   text-align: center;
   color: #ffff;
-  background-color: #226F54 ;
+  background-color: #226f54;
 }
 
 .slider-container {
@@ -99,25 +126,22 @@
   padding: 20px;
 }
 
-
 /* The slider itself */
 .slider {
   -webkit-appearance: none;
   width: 95%;
   height: 40px; /* Can be adjusted */
-  background: #86C28E; /* Slider background */
+  background: #86c28e; /* Slider background */
   outline: none;
   opacity: 0.7; /* Make the slider slightly transparent */
-  -webkit-transition: .2s; /* Transition for smoother movement */
-  transition: opacity .2s;
+  -webkit-transition: 0.2s; /* Transition for smoother movement */
+  transition: opacity 0.2s;
   border-radius: 2rem;
 }
 
-
-
 .react-slider-thumb {
-  background-color: #EAB9B8; /* Pink color */
-  
+  background-color: #eab9b8; /* Pink color */
+
   height: 40px; /* Height of the thumb */
   width: 95px; /* Width of the thumb, adjust if needed */
   border-radius: 1.5rem; /* Fully rounded edges */
@@ -129,6 +153,6 @@
 }
 
 .react-slider-thumb:active {
-  background-color: #FFB6C1; /* Lighter pink color when active */
+  background-color: #ffb6c1; /* Lighter pink color when active */
   cursor: grabbing;
 }

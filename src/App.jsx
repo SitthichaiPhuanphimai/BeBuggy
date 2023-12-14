@@ -2,23 +2,19 @@ import { useState } from 'react'
 import './App.css'
 import NameForm from './NameForm'
 import DogBreedDropdown from './mydropdown'
-import WeightSlider from './weight';
+import WeightSlider from './weightForm';
+import { DogFormProvider } from './dogFormContext';
 
 function App() {
-  
-
   return (
-    
-    <div>
-    <NameForm />
+      <DogFormProvider>
+         
+          <NameForm />
+          <DogBreedDropdown />
+          <WeightSlider />
 
-      
-    <DogBreedDropdown />
-
-    <WeightSlider />
-
-      </div>
-  )
+      </DogFormProvider>
+  );
 }
 
-export default App
+export default App;

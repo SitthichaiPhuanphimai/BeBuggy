@@ -10,7 +10,7 @@ function DogBreedDropdown() {
         control: (styles) => ({ ...styles, fontFamily: "'Chelsea Market', cursive", width: 300 }),
         option: (styles) => ({ ...styles, fontFamily: "'Chelsea Market', cursive", color: 'black' }),
         singleValue: (styles) => ({ ...styles, fontFamily: "'Chelsea Market', cursive", color: 'black' }),
-        // Apply this font style to other parts as needed
+       
     };
 
     return (
