@@ -121,15 +121,14 @@
 
 .slider-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
 
-
 .slider {
   appearance: none;
-  width: 95%;
+
   height: 40px;
   background: #86c28e;
   outline: none;
@@ -137,9 +136,9 @@
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
   border-radius: 2rem;
+  flex-grow: 1;
+  margin: 0 10px;
 }
-
-
 
 .react-slider-thumb {
   background-color: #eab9b8;
@@ -159,7 +158,13 @@
   cursor: grabbing;
 }
 
-
 .dog-name {
-  color: #FFAF1F;
+  color: #ffaf1f;
+}
+
+.weight-label {
+  font-size: 2em;
+  color: #ffff;
+
+  padding: 0 10px;
 }

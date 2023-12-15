@@ -3,6 +3,7 @@ import "./App.css";
 import NameForm from "./NameForm";
 import DogBreedDropdown from "./mydropdown";
 import WeightSlider from "./weightForm";
+import GenderForm from "./genderForm";
 import { DogFormProvider } from "./dogFormContext";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           goToPreviousStep={goToPreviousStep}
         />
       )}
+      {step === 4 && <GenderForm goToNextStep={goToNextStep} />}
     </DogFormProvider>
   );
 }

@@ -1,50 +1,66 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slider";
 import "./index.css";
 import { useDogForm } from "./dogFormContext";
+import breeds from "./dogbreeds.json";
 
 const Thumb = React.forwardRef((props, ref) => (
   <div ref={ref} {...props} className="react-slider-thumb">
-    {[props.state.valueNow, "kg"]}
+    {formatWeight(props.state.valueNow) + " kg"}
   </div>
 ));
 
 Thumb.displayName = "Thumb";
 
+const formatWeight = (weight) => {
+  let formattedWeight = parseFloat(weight.toFixed(2)).toString();
+  return formattedWeight;
+};
+
 const WeightSlider = ({ goToNextStep, goToPreviousStep }) => {
   const { dogData, updateData } = useDogForm();
-  const [weight, setWeight] = useState(10);
+  const [localWeight, setLocalWeight] = useState(dogData.weight || 0);
 
+  useEffect(() => {
+    const breedData = breeds.find((breed) => breed.RACE === dogData.breed);
+    if (breedData) {
+      setLocalWeight(breedData["Gennmsnit (KG)"]);
+    }
+  }, [dogData.breed]);
   const handleSliderChange = (value) => {
-    setWeight(value);
+    setLocalWeight(value);
+  };
+
+  const handleNextClick = () => {
+    updateData({ weight: localWeight });
+    goToNextStep();
   };
 
   return (
     <>
-        <div style={{ display: "flex", justifyContent: "center" }}>
-        <h2>Hvad er <span className="dog-name">{dogData.name}</span>'s vægt?</h2>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <h2>
+          Hvad er <span className="dog-name">{dogData.name}</span>'s vægt?
+        </h2>
       </div>
       <div className="slider-container">
+        <div className="weight-label">1 kg</div>
         <Slider
-          defaultValue={10}
-          min={0}
-          max={50}
+          value={localWeight}
+          min={1}
+          max={80}
+          step={0.05}
           onChange={handleSliderChange}
           renderThumb={(props, state) => <Thumb {...props} state={state} />}
         />
+        <div className="weight-label">80 kg</div>
       </div>
 
       <div className="button-container">
         <button className="button-back" onClick={goToPreviousStep}>
           tilbage
         </button>
-        <button
-          className="button-next-double"
-          onClick={() => {
-            updateData({ weight });
-            goToNextStep();
-          }}
-        >
+        <button className="button-next-double" onClick={handleNextClick}>
           næste
         </button>
       </div>
