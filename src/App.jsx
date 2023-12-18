@@ -34,15 +34,16 @@ function App() {
           goToPreviousStep={goToPreviousStep}
         />
       )}
-      {step === 4 && <Steriliseret goToNextStep={goToNextStep} />}
-      {step === 5 && <AgeForm goToNextStep={goToNextStep} />}
-      {step === 6 && <Kropstilstand goToNextStep={goToNextStep} />}
-      {step === 7 && <Summary goToNextStep={goToNextStep} />}
+      {step === 4 && <GenderForm goToNextStep={goToNextStep} />}
+      {step === 5 && <Steriliseret goToNextStep={goToNextStep} />}
+      {step === 6 && <AgeForm goToNextStep={goToNextStep} />}
+      {step === 7 && <Kropstilstand goToNextStep={goToNextStep} />}
+      {step === 8 && <Summary goToNextStep={goToNextStep} />}
 
       
       
     </DogFormProvider>
-    
+  
   );
 }
 

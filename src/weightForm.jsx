@@ -43,7 +43,7 @@ const WeightSlider = ({ goToNextStep, goToPreviousStep }) => {
           Hvad er <span className="dog-name">{dogData.name}</span>'s vægt?
         </h2>
       </div>
-      <div className="slider-container">
+      <div className="slider-container ">
         <div className="weight-label">1 kg</div>
         <Slider
           value={localWeight}
@@ -63,6 +63,9 @@ const WeightSlider = ({ goToNextStep, goToPreviousStep }) => {
         <button className="button-next-double" onClick={handleNextClick}>
           næste
         </button>
+
+        <img id="dog" src="src/assets/beBuggyDog.webp" alt="dog" />
+            <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
       </div>
     </>
   );
