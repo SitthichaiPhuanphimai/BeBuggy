@@ -4,7 +4,7 @@ import { useDogForm } from "./dogFormContext";
 import dogBreeds from "./dogbreeds.json";
 
 function DogBreedDropdown({ goToNextStep }) {
-  const { updateData } = useDogForm();
+  const {dogData, updateData } = useDogForm();
   const options = dogBreeds.map((breed) => ({
     label: breed.RACE,
     value: breed.RACE,
@@ -28,6 +28,9 @@ function DogBreedDropdown({ goToNextStep }) {
 
   return (
     <div>
+
+      <div className="centered">
+        <h2> Hvad er <span className="dog-name">{dogData.name}s </span>race?</h2>
       <Select
         options={options}
         isSearchable
@@ -40,6 +43,14 @@ function DogBreedDropdown({ goToNextStep }) {
           Næste
         </button>
       </div>
+      </div>
+
+
+      <img id="dog" src="src/assets/beBuggyDog.webp" alt="dog" />
+      <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
+
+  
+
     </div>
   );
 }

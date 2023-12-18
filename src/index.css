@@ -15,6 +15,24 @@
   height: 450px;
 }
 
+#dog-left {
+  position: absolute;
+  bottom: -50px;
+  left: -40px;
+  width: 300px;
+  height: 300px;
+  transform: rotate(40deg);
+}
+
+#dog-top-left {
+  position: absolute;
+  top: -50px;
+  left: -40px;
+  width: 300px;
+  height: 300px;
+  transform: rotate(140deg);
+}
+
 #logo {
   position: absolute;
   top: 0;
@@ -39,7 +57,7 @@
 
 .button-next {
   background-color: #86c28e;
-  font-size: 0.5em;
+  font-size: 1em;
   color: white;
   border: 20px;
   border-radius: 20px;
@@ -88,6 +106,43 @@
   transition: transform 0.2s;
   background-color: #ffaf1f;
 }
+
+.button-yesNo{
+
+
+  background-color: #86c28e;
+  font-size: 0.5em;
+  color: white;
+  border: 20px;
+  border-radius: 20px;
+  padding: 40px 50px;
+
+  display: block;
+  font-family: inherit;
+  position: center;
+  font-size: 1.3em;
+}
+
+.button-yesNo:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+  background-color: #86c28e;
+}
+
+.button-yesNo.active {
+  background-color: #FFF8EE ; 
+  color: #226f54;
+}
+
+.button-yesNo {
+  transition: background-color 0.3s ease;
+}
+
+.button-yesNo:active {
+  background-color: #ffaf1f;; 
+}
+
+
 
 #nameForm input {
   font-size: 0.5em;
@@ -168,3 +223,29 @@
 
   padding: 0 10px;
 }
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+ 
+}
+
+#summary {
+
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  
+
+
+}
+
+

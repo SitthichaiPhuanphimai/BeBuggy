@@ -4,7 +4,12 @@ import NameForm from "./NameForm";
 import DogBreedDropdown from "./mydropdown";
 import WeightSlider from "./weightForm";
 import GenderForm from "./genderForm";
+import Steriliseret from "./steriliseret";
+import ageForm from "./AgeForm";
 import { DogFormProvider } from "./dogFormContext";
+import AgeForm from "./AgeForm";
+import Kropstilstand from "./Kropstilstand";
+import Summary from "./Summary";
 
 function App() {
   const [step, setStep] = useState(1);
@@ -29,8 +34,15 @@ function App() {
           goToPreviousStep={goToPreviousStep}
         />
       )}
-      {step === 4 && <GenderForm goToNextStep={goToNextStep} />}
+      {step === 4 && <Steriliseret goToNextStep={goToNextStep} />}
+      {step === 5 && <AgeForm goToNextStep={goToNextStep} />}
+      {step === 6 && <Kropstilstand goToNextStep={goToNextStep} />}
+      {step === 7 && <Summary goToNextStep={goToNextStep} />}
+
+      
+      
     </DogFormProvider>
+    
   );
 }
 
