@@ -29,7 +29,10 @@ function App() {
           goToPreviousStep={goToPreviousStep}
         />
       )}
-      {step === 4 && <GenderForm goToNextStep={goToNextStep} />}
+      {step === 4 && <GenderForm
+       goToNextStep={goToNextStep}
+       goToPreviousStep={goToPreviousStep}
+       />}
     </DogFormProvider>
   );
 }

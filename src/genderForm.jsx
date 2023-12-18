@@ -1,28 +1,49 @@
-import "./index.css";
-import { DogFormProvider, useDogForm } from "./dogFormContext";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useDogForm } from "./dogFormContext";
 
-function GenderForm() {
-    const [gender, setGender] = useState(null); // Add this line
-    const { dogData, updateData } = useDogForm();
+function GenderForm({ goToNextStep, goToPreviousStep }) {
+  const { dogData, updateData } = useDogForm();
+  const [selectedGender, setSelectedGender] = useState(dogData.gender || "");
 
-    const handleNextClick = () => {
-        updateData({ gender: gender });
-        goToNextStep();
-    };
+  const handleGenderSelect = (gender) => {
+    setSelectedGender(gender);
+  };
 
-    const handleGenderChange = (e) => {
-        setGender(e.target.value);
-    }
+  const handleNextClick = () => {
+    updateData({ gender: selectedGender });
+    goToNextStep();
+  };
 
-
-    return (
-        <>
-            <h2>
-                Er <span className="dog-name">{dogData.name} </span>en han eller hun?
-            </h2>
-        </>
-    )
+  return (
+    <>
+      <h2>
+        Er <span className="dog-name">{dogData.name}</span> en sød hanhund eller
+        hunhund?
+      </h2>
+      <div className="gender-selection-container">
+        <button
+          onClick={() => handleGenderSelect("male")}
+          className={selectedGender === "male" ? "selected" : ""}
+        >
+          ♂
+        </button>
+        <button
+          onClick={() => handleGenderSelect("female")}
+          className={selectedGender === "female" ? "selected" : ""}
+        >
+          ♀
+        </button>
+      </div>
+      <div className="button-container">
+        <button className="button-back" onClick={goToPreviousStep}>
+          Tilbage
+        </button>
+        <button className="button-next-double" onClick={handleNextClick}>
+          Næste
+        </button>
+      </div>
+    </>
+  );
 }
 
 export default GenderForm;

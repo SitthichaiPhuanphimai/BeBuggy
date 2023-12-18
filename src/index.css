@@ -168,3 +168,16 @@
 
   padding: 0 10px;
 }
+
+
+.gender-selection-container button {
+  font-size: 2em; /* Adjust size as needed */
+  padding: 10px 20px;
+  margin: 10px;
+  /* Add more styling as needed */
+}
+
+.gender-selection-container button.selected {
+  background-color: #86c28e; /* Highlight for selected gender */
+  color: white;
+}
