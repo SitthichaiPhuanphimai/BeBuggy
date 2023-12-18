@@ -10,6 +10,7 @@ import { DogFormProvider } from "./dogFormContext";
 import AgeForm from "./AgeForm";
 import Kropstilstand from "./Kropstilstand";
 import Summary from "./Summary";
+import ActiveForm from "./activeForm";
 
 function App() {
   const [step, setStep] = useState(1);
@@ -38,7 +39,8 @@ function App() {
       {step === 5 && <Steriliseret goToNextStep={goToNextStep} />}
       {step === 6 && <AgeForm goToNextStep={goToNextStep} />}
       {step === 7 && <Kropstilstand goToNextStep={goToNextStep} />}
-      {step === 8 && <Summary goToNextStep={goToNextStep} />}
+      {step === 8 && <ActiveForm goToNextStep={goToNextStep} />}
+      {step === 9 && <Summary goToNextStep={goToNextStep} />}
 
       
       
