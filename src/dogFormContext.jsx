@@ -9,7 +9,8 @@ export const DogFormProvider = ({ children }) => {
     name: "",
     breed: "",
     weight: null,
-    gender: ""
+    gender: "",
+    active: ""
   });
 
   const updateData = (newData) => {

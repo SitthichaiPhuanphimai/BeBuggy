@@ -170,14 +170,33 @@
 }
 
 
+.gender-selection-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
 .gender-selection-container button {
-  font-size: 2em; /* Adjust size as needed */
-  padding: 10px 20px;
-  margin: 10px;
-  /* Add more styling as needed */
+  font-size: 3em;
+  color: #ffffff;
+  background-color: #86c28e;
+  border: none;
+  padding: 12px 25px;
+  margin: 0 5px;
+  border-radius: 10px; 
+  transition: all 0.3s ease;
+  font-weight: bold;
+  
+}
+
+.gender-selection-container button:hover {
+  background-color: #ffffff;
+  color: #86c28e;
 }
 
 .gender-selection-container button.selected {
-  background-color: #86c28e; /* Highlight for selected gender */
-  color: white;
+  background-color: #ffffff;
+  color: #86c28e;
+
 }

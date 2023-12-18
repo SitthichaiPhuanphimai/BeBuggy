@@ -5,6 +5,9 @@ import DogBreedDropdown from "./mydropdown";
 import WeightSlider from "./weightForm";
 import GenderForm from "./genderForm";
 import { DogFormProvider } from "./dogFormContext";
+import ActiveForm from "./activeForm";
+
+
 
 function App() {
   const [step, setStep] = useState(1);
@@ -33,6 +36,11 @@ function App() {
        goToNextStep={goToNextStep}
        goToPreviousStep={goToPreviousStep}
        />}
+      {step === 5 && <ActiveForm 
+      goToNextStep={goToNextStep}
+      goToPreviousStep={goToPreviousStep} 
+      />}
+   
     </DogFormProvider>
   );
 }
