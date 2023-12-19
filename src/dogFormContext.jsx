@@ -11,6 +11,8 @@ export const DogFormProvider = ({ children }) => {
     weight: null,
     age: null,
     sterilized: null,
+    condition: null,
+    active: null,
   });
 
   const updateData = (newData) => {

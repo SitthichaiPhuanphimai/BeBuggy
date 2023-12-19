@@ -24,6 +24,15 @@
   
 }
 
+#red{
+
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  width: 300px;
+  height: auto;
+}
+
 
 #dog-left {
   position: absolute;

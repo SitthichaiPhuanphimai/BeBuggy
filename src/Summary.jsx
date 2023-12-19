@@ -31,6 +31,7 @@ function Summary() {
               
             
                 <img id="emballage" src="src/assets/Mockup design (din hund).png" />
+                <img id="red" src="src/assets/Red_blob.png" />
            
 
             <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
