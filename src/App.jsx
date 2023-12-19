@@ -28,19 +28,19 @@ function App() {
   return (
     <DogFormProvider>
       {step === 1 && <NameForm goToNextStep={goToNextStep} />}
-      {step === 2 && <DogBreedDropdown goToNextStep={goToNextStep} />}
+      {step === 2 && <DogBreedDropdown goToNextStep={goToNextStep} goToPreviousStep={goToPreviousStep} />}
       {step === 3 && (
         <WeightSlider
           goToNextStep={goToNextStep}
           goToPreviousStep={goToPreviousStep}
         />
       )}
-      {step === 4 && <GenderForm goToNextStep={goToNextStep} />}
-      {step === 5 && <Steriliseret goToNextStep={goToNextStep} />}
-      {step === 6 && <AgeForm goToNextStep={goToNextStep} />}
-      {step === 7 && <Kropstilstand goToNextStep={goToNextStep} />}
-      {step === 8 && <ActiveForm goToNextStep={goToNextStep} />}
-      {step === 9 && <Summary goToNextStep={goToNextStep} />}
+      {step === 4 && <GenderForm goToNextStep={goToNextStep} goToPreviousStep={goToPreviousStep} />}
+      {step === 5 && <Steriliseret goToNextStep={goToNextStep} goToPreviousStep={goToPreviousStep} />}
+      {step === 6 && <AgeForm goToNextStep={goToNextStep} goToPreviousStep={goToPreviousStep} />}
+      {step === 7 && <Kropstilstand goToNextStep={goToNextStep} goToPreviousStep={goToPreviousStep}/>}
+      {step === 8 && <ActiveForm goToNextStep={goToNextStep} goToPreviousStep={goToPreviousStep} />}
+      {step === 9 && <Summary goToNextStep={goToNextStep} goToPreviousStep={goToPreviousStep} />}
 
       
       

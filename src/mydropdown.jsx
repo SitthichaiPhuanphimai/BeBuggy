@@ -3,7 +3,7 @@ import Select from "react-select";
 import { useDogForm } from "./dogFormContext"; 
 import dogBreeds from "./dogbreeds.json";
 
-function DogBreedDropdown({ goToNextStep }) {
+function DogBreedDropdown({ goToNextStep,goToPreviousStep }) {
   const {dogData, updateData } = useDogForm();
   const options = dogBreeds.map((breed) => ({
     label: breed.RACE,
@@ -39,6 +39,9 @@ function DogBreedDropdown({ goToNextStep }) {
         onChange={handleChange}
       />
       <div className="button-container">
+      <button className="button-back" onClick={goToPreviousStep}>
+                Tilbage
+                </button>
         <button className="button-next" onClick={handleNextStep}>
           Næste
         </button>

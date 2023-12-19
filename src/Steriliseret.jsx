@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDogForm } from './dogFormContext';
 
-function Steriliseret({goToNextStep}) {
+function Steriliseret({goToNextStep, goToPreviousStep}) {
 
     const [sterilized, setSterilized] = useState(false);
     const [lastClicked, setLastClicked] = useState(null);
@@ -27,6 +27,9 @@ function Steriliseret({goToNextStep}) {
             
           
             <div className="button-container">
+            <button className="button-back" onClick={goToPreviousStep}>
+                Tilbage
+                </button>
                  <button className="button-next" onClick={handleNextStep}>
                      Næste
                         </button>

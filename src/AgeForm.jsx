@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { useDogForm } from './dogFormContext';
 
-function AgeForm({ goToNextStep }) {
+function AgeForm({ goToNextStep,goToPreviousStep }) {
 
 
     const [age, setAge] = useState(null);
@@ -31,6 +31,9 @@ function AgeForm({ goToNextStep }) {
 
 
             <div className="button-container">
+            <button className="button-back" onClick={goToPreviousStep}>
+                Tilbage
+                </button>
                  <button className="button-next" onClick={handleNextStep}>
                      Næste
                         </button>

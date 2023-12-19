@@ -76,14 +76,15 @@
 
 .button-next {
   background-color: #86c28e;
-  font-size: 1em;
+  font-size: 1.3em;
   color: white;
   border: 20px;
   border-radius: 20px;
   margin: auto;
-  padding: 30px;
+  padding: 40px 50px;
   display: block;
   font-family: inherit;
+  position: center;
 }
 
 .button-next-double {
