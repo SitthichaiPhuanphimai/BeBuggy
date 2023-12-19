@@ -30,7 +30,7 @@ function BodyCondition({goToNextStep}) {
     
         <button className={`button-yesNo ${lastClicked === 'Undervægtig' ? 'active' : ''}`} onClick={() => { setCondition('Undervægtig'); setLastClicked('Undervægtig'); console.log("Undervægtig")}}>Undervægtig</button>
         <button className={`button-yesNo ${lastClicked === 'Normal' ? 'active' : ''}`} onClick={() => { setCondition('Normal'); setLastClicked('Normal'); console.log("Normal")}}>Normal</button>
-        <button className={`button-yesNo ${lastClicked === 'Overvægtig' ? 'active' : ''}`} onClick={() => { setCondition('Overvægtigt'); setLastClicked('Overvægtig'); console.log("Overvægtig")}}>Overvægtig</button>
+        <button className={`button-yesNo ${lastClicked === 'Overvægtig' ? 'active' : ''}`} onClick={() => { setCondition('Overvægtig'); setLastClicked('Overvægtig'); console.log("Overvægtig")}}>Overvægtig</button>
             
 
 
