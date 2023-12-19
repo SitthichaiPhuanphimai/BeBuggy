@@ -40,11 +40,7 @@ function App() {
       {step === 7 && <BodyCondition goToNextStep={goToNextStep} />}
       {step === 8 && <ActiveForm goToNextStep={goToNextStep} />}
       {step === 9 && <Summary goToNextStep={goToNextStep} />}
-
-      
-      
     </DogFormProvider>
-  
   );
 }
 

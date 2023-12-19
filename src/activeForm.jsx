@@ -3,14 +3,16 @@ import { useDogForm } from "./dogFormContext";
 
 function ActiveForm({ goToNextStep, goToPreviousStep }) {
   const { dogData, updateData } = useDogForm();
-  const [selectedActive, setSelectedActive] = useState(dogData.active || "");
+  const [selectedActive, setSelectedActive] = useState(
+    dogData.activityLevel || ""
+  );
 
   const handleActiveSelect = (active) => {
     setSelectedActive(active);
   };
 
   const handleNextClick = () => {
-    updateData({ active: selectedActive });
+    updateData({ activityLevel: selectedActive });
     goToNextStep();
   };
 
@@ -21,32 +23,32 @@ function ActiveForm({ goToNextStep, goToPreviousStep }) {
       </h2>
       <div className="active-selection-container">
         <button
-          onClick={() => handleActiveSelect("slumretrold")}
+          onClick={() => handleActiveSelect("Slumretrold")}
           className={selectedActive === "slumretrold" ? "selected" : ""}
         >
           Slumretrold
         </button>
         <button
-          onClick={() => handleActiveSelect("lidt aktiv")}
-          className={selectedActive === "lidt aktiv" ? "selected" : ""}
+          onClick={() => handleActiveSelect("Lidt aktiv")}
+          className={selectedActive === "Lidt aktiv" ? "selected" : ""}
         >
           Lidt aktiv
         </button>
         <button
-          onClick={() => handleActiveSelect("aktiv")}
-          className={selectedActive === "aktiv" ? "selected" : ""}
+          onClick={() => handleActiveSelect("Aktiv")}
+          className={selectedActive === "Aktiv" ? "selected" : ""}
         >
           Aktiv
         </button>
         <button
-          onClick={() => handleActiveSelect("meget aktiv")}
-          className={selectedActive === "meget aktiv" ? "selected" : ""}
+          onClick={() => handleActiveSelect("Meget aktiv")}
+          className={selectedActive === "Meget aktiv" ? "selected" : ""}
         >
           Meget aktiv
         </button>
         <button
-          onClick={() => handleActiveSelect("energibombe")}
-          className={selectedActive === "energibombe" ? "selected" : ""}
+          onClick={() => handleActiveSelect("Energibombe")}
+          className={selectedActive === "Energibombe" ? "selected" : ""}
         >
           Energibombe
         </button>
