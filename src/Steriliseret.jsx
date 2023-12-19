@@ -10,7 +10,7 @@ function Steriliseret({goToNextStep, goToPreviousStep}) {
 
 
     const handleNextStep = () => {
-        updateData({ sterilized });
+        updateData({sterilized: sterilized });
         goToNextStep();
         
     }

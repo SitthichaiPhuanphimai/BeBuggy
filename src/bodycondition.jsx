@@ -12,7 +12,7 @@ function BodyCondition({goToNextStep}) {
     const [lastClicked, setLastClicked] = useState(null);
 
     const handleNextStep = () => {
-        updateData({ condition });
+        updateData({ condition : condition });
         goToNextStep();
         
     }
