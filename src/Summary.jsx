@@ -20,7 +20,7 @@ function Summary() {
                 <p>Alder:  <span className="dog-name">{dogData.age}</span> </p>
                 <p>Steriliseret/Kastreret:  <span className="dog-name">{dogData.sterilized ? 'Ja' : 'Nej'}.</span> </p>
                 <p>Kropstilstand:  <span className="dog-name">{dogData.condition}</span> </p>
-                <p>Aktivitetsniveau:  <span className="dog-name">{dogData.selectedActive}</span> </p>
+                <p>Aktivitetsniveau:  <span className="dog-name">{dogData.active}</span> </p>
                 
 
 
