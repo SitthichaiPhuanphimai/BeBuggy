@@ -64,13 +64,13 @@ function calculateFoodPerKilo() {
   console.log(fpk);
 
   fpk = adjustForGender(fpk, dogData.gender);
-  console.log("For gender", fpk);
+
   fpk = adjustForSterilization(fpk, dogData.sterilized);
-  console.log("For steril", fpk);
+  
   fpk = adjustForBodyCondition(fpk, dogData.condition);
-  console.log("For bodycondition", fpk);
+  
   fpk = adjustForActivityLevel(fpk, dogData.activityLevel);
-  console.log("For activity", fpk);
+
 
   let totalDailyFood = fpk * dogData.weight;
 
