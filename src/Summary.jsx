@@ -29,9 +29,40 @@ function Summary() {
             </div>
 
               
+              
+            <img id="emballage" src="src/assets/Mockup design (din hund).png"  />
             
-                <img id="emballage" src="src/assets/Mockup design (din hund).png" />
-                <img id="red" src="src/assets/Red_blob.png" />
+            
+                
+                
+
+            <div>
+            <img id="red" src="src/assets/Red_blob.png" alt="Red Blob" />
+            <p id="" style={{
+                position: 'absolute',
+                top: '56%',
+                left: '49%',
+                transform: 'translate(-50%, -50%)',
+                color: 'white', 
+                fontSize: "x-large"
+                
+                
+                 }}>
+              Anbefalet
+              </p>
+
+              <p id="" style={{
+                position: 'absolute',
+                top: '60%',
+                left: '49%',
+                transform: 'translate(-50%, -50%)',
+                color: 'white',
+                fontSize: "x-large"
+                
+                 }}>
+              fodermængde:
+              </p>
+                </div>
            
 
             <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
