@@ -4,7 +4,7 @@ import { useDogForm } from './dogFormContext';
 
 
 
-function Kropstilstand({goToNextStep}) {
+function BodyCondition({goToNextStep}) {
 
 
     const [condition, setCondition] = useState(null);
@@ -49,4 +49,4 @@ function Kropstilstand({goToNextStep}) {
       );
 }
 
-export default Kropstilstand;
+export default BodyCondition;

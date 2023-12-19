@@ -22,14 +22,14 @@ function GenderForm({ goToNextStep, goToPreviousStep }) {
       </h2>
       <div className="gender-selection-container">
         <button
-          onClick={() => handleGenderSelect("male")}
-          className={selectedGender === "male" ? "selected" : ""}
+          onClick={() => handleGenderSelect("Hankøn")}
+          className={selectedGender === "Hankøn" ? "selected" : ""}
         >
           ♂
         </button>
         <button
-          onClick={() => handleGenderSelect("female")}
-          className={selectedGender === "female" ? "selected" : ""}
+          onClick={() => handleGenderSelect("Hunkøn")}
+          className={selectedGender === "Hunkøn" ? "selected" : ""}
         >
           ♀
         </button>

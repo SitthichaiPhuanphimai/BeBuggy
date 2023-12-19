@@ -21,6 +21,7 @@ const ranges = [
 
 function findRange(weight) {
   return ranges.find(({ min, max }) => weight >= min && weight <= max);
+  
 }
 
 function adjustForGender(fpk, gender) {
@@ -65,7 +66,7 @@ function calculateFoodPerKilo() {
 
   fpk = adjustForGender(fpk, dogData.gender);
   fpk = adjustForSterilization(fpk, dogData.sterilized);
-  fpk = adjustForBodyCondition(fpk, dogData.bodyCondition);
+  fpk = adjustForBodyCondition(fpk, dogData.condition);
   fpk = adjustForActivityLevel(fpk, dogData.activityLevel);
   
   let totalDailyFood = fpk * dogData.weight;

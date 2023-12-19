@@ -13,6 +13,8 @@ export const DogFormProvider = ({ children }) => {
     sterilized: null,
     condition: null,
     active: null,
+    gender: null,
+    activityLevel: null
   });
 
   const updateData = (newData) => {
