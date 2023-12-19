@@ -17,19 +17,19 @@ function GenderForm({ goToNextStep, goToPreviousStep }) {
   return (
     <>
       <h2>
-        Er <span className="dog-name ">{dogData.name}</span> en sød hanhund eller
+        Er <span className="dog-name">{dogData.name}</span> en sød hanhund eller
         hunhund?
       </h2>
-      <div className="gender-selection-container ">
+      <div className="gender-selection-container">
         <button
-          onClick={() => handleGenderSelect("male")}
-          className={selectedGender === "male" ? "selected" : ""}
+          onClick={() => handleGenderSelect("Hankøn")}
+          className={selectedGender === "Hankøn" ? "selected" : ""}
         >
           ♂
         </button>
         <button
-          onClick={() => handleGenderSelect("female")}
-          className={selectedGender === "female" ? "selected" : ""}
+          onClick={() => handleGenderSelect("Hunkøn")}
+          className={selectedGender === "Hunkøn" ? "selected" : ""}
         >
           ♀
         </button>
@@ -41,10 +41,6 @@ function GenderForm({ goToNextStep, goToPreviousStep }) {
         <button className="button-next-double" onClick={handleNextClick}>
           Næste
         </button>
-
-        <img id="dog" src="src/assets/beBuggyDog.webp" alt="dog" />
-        <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
-
       </div>
     </>
   );

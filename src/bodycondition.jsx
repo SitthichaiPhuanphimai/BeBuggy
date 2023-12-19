@@ -4,7 +4,7 @@ import { useDogForm } from './dogFormContext';
 
 
 
-function Kropstilstand({goToNextStep,goToPreviousStep}) {
+function BodyCondition({goToNextStep}) {
 
 
     const [condition, setCondition] = useState(null);
@@ -35,9 +35,6 @@ function Kropstilstand({goToNextStep,goToPreviousStep}) {
 
 
             <div className="button-container">
-            <button className="button-back" onClick={goToPreviousStep}>
-                Tilbage
-                </button>
                  <button className="button-next" onClick={handleNextStep}>
                      Næste
                         </button>
@@ -52,4 +49,4 @@ function Kropstilstand({goToNextStep,goToPreviousStep}) {
       );
 }
 
-export default Kropstilstand;
+export default BodyCondition;
