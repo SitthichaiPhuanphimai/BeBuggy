@@ -1,4 +1,3 @@
-
 import { useDogForm } from "./dogFormContext";
 
 const ranges = [
@@ -21,11 +20,10 @@ const ranges = [
 
 function findRange(weight) {
   return ranges.find(({ min, max }) => weight >= min && weight <= max);
-  
 }
 
 function adjustForGender(fpk, gender) {
-  if (gender === "Hankun") {
+  if (gender === "Hankøn") {
     return fpk * 1.05;
   } else if (gender === "Hunkøn") {
     return fpk * 0.95;
@@ -42,6 +40,8 @@ function adjustForBodyCondition(fpk, bodyCondition) {
     return fpk * 1.17;
   } else if (bodyCondition === "Overvægtig") {
     return fpk * 0.83;
+  } else if (bodyCondition === "Normal") {
+    return fpk * 1;
   }
   return fpk;
 }
@@ -56,21 +56,23 @@ function adjustForActivityLevel(fpk, activityLevel) {
   return fpk * (adjustmentFactors[activityLevel] || 1);
 }
 
-
-
 function calculateFoodPerKilo() {
   const { dogData } = useDogForm();
   const range = findRange(dogData.weight);
 
   let fpk = range ? range.value : 0;
+  console.log(fpk);
 
   fpk = adjustForGender(fpk, dogData.gender);
-  fpk = adjustForSterilization(fpk, dogData.sterilized);
-  fpk = adjustForBodyCondition(fpk, dogData.condition);
-  fpk = adjustForActivityLevel(fpk, dogData.activityLevel);
-  
-  let totalDailyFood = fpk * dogData.weight;
 
+  fpk = adjustForSterilization(fpk, dogData.sterilized);
+  
+  fpk = adjustForBodyCondition(fpk, dogData.condition);
+  
+  fpk = adjustForActivityLevel(fpk, dogData.activityLevel);
+
+
+  let totalDailyFood = fpk * dogData.weight;
 
   return totalDailyFood.toFixed(2);
 }
