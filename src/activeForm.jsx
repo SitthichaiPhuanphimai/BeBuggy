@@ -3,12 +3,20 @@ import { useDogForm } from "./dogFormContext";
 
 function ActiveForm({ goToNextStep, goToPreviousStep }) {
   const { dogData, updateData } = useDogForm();
-  const [selectedActive, setSelectedActive] = useState(
-    dogData.activityLevel || ""
-  );
+  const [selectedActive, setSelectedActive] = useState(dogData.activityLevel || "");
+  const [activeDescription, setActiveDescription] = useState("");
+
+  const descriptions = {
+    Slumretrold: "Under 30 minutters motion om dagen",
+    "Lidt aktiv": "30-60 minutters motion om dagen",
+    Aktiv: "1-2 timers motion om dagen",
+    "Meget aktiv": "2-3 timers motion om dagen",
+    Energibombe: "Over 3 timers motion om dagen"
+  };
 
   const handleActiveSelect = (active) => {
     setSelectedActive(active);
+    setActiveDescription(descriptions[active]);
   };
 
   const handleNextClick = () => {
@@ -19,39 +27,22 @@ function ActiveForm({ goToNextStep, goToPreviousStep }) {
   return (
     <>
       <h2>
-        Hvor aktiv er <span className="dog-name">{dogData.name}</span> ?
+        Hvor aktiv er <span className="dog-name">{dogData.name}</span>?
       </h2>
       <div className="active-selection-container">
-        <button
-          onClick={() => handleActiveSelect("Slumretrold")}
-          className={selectedActive === "slumretrold" ? "selected" : ""}
-        >
-          Slumretrold
-        </button>
-        <button
-          onClick={() => handleActiveSelect("Lidt aktiv")}
-          className={selectedActive === "Lidt aktiv" ? "selected" : ""}
-        >
-          Lidt aktiv
-        </button>
-        <button
-          onClick={() => handleActiveSelect("Aktiv")}
-          className={selectedActive === "Aktiv" ? "selected" : ""}
-        >
-          Aktiv
-        </button>
-        <button
-          onClick={() => handleActiveSelect("Meget aktiv")}
-          className={selectedActive === "Meget aktiv" ? "selected" : ""}
-        >
-          Meget aktiv
-        </button>
-        <button
-          onClick={() => handleActiveSelect("Energibombe")}
-          className={selectedActive === "Energibombe" ? "selected" : ""}
-        >
-          Energibombe
-        </button>
+        {Object.keys(descriptions).map((activityLevel) => (
+          <div key={activityLevel}>
+            <button 
+              onClick={() => handleActiveSelect(activityLevel)}
+              className={`button-yesNo ${selectedActive === activityLevel ? "selected" : ""}`}
+            >
+              {activityLevel}
+            </button>
+            {selectedActive === activityLevel && (
+              <p className="active-description">{activeDescription}</p>
+            )}
+          </div>
+        ))}
       </div>
       <div className="button-container">
         <button className="button-back" onClick={goToPreviousStep}>

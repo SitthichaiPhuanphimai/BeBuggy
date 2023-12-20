@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDogForm } from "./dogFormContext";
 
-function BodyCondition({ goToNextStep }) {
+function BodyCondition({ goToNextStep, goToPreviousStep }) {
   const [condition, setCondition] = useState(null);
   const { dogData, updateData } = useDogForm();
   const [lastClicked, setLastClicked] = useState(null);
@@ -56,6 +56,9 @@ function BodyCondition({ goToNextStep }) {
         </button>
 
         <div className="button-container">
+          <button className="button-back" onClick={goToPreviousStep}>
+            tilbage
+          </button>
           <button className="button-next" onClick={handleNextStep}>
             Næste
           </button>
