@@ -16,23 +16,19 @@
 }
 
 #emballage {
-
   position: absolute;
   right: 0;
   width: 800px;
   height: auto;
-  
 }
 
-#red{
-
+#red {
   position: absolute;
   top: 50%;
   left: 38%;
   width: 300px;
   height: auto;
 }
-
 
 #dog-left {
   position: absolute;
@@ -80,23 +76,10 @@
   color: white;
   border: 20px;
   border-radius: 20px;
-  margin: auto;
+  margin: 20px 10px;
   padding: 30px;
   display: block;
   font-family: inherit;
-}
-
-.button-next-double {
-  background-color: #86c28e;
-  font-size: 0.5em;
-  color: white;
-  border: 20px;
-  border-radius: 20px;
-  padding: 30px;
-  display: block;
-  font-family: inherit;
-  padding: 40px 50px;
-  font-size: 1.3em;
 }
 
 .button-next:hover,
@@ -108,16 +91,33 @@
 
 .button-back {
   background-color: #ffaf1f;
-  font-size: 0.5em;
+  font-size: 1em;
   color: white;
   border: 20px;
   border-radius: 20px;
-  padding: 40px 50px;
-
+  margin: auto;
+  padding: 30px;
   display: block;
   font-family: inherit;
-  position: center;
-  font-size: 1.3em;
+  margin: 20px 10px;
+}
+
+.button-skip {
+  background-color: red;
+  font-size: 1em;
+  color: white;
+  border: 20px;
+  border-radius: 20px;
+  margin: auto;
+  padding: 30px;
+  display: block;
+  font-family: inherit;
+  margin: 20px 10px;
+}
+.button-skip:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+  background-color: red;
 }
 
 .button-back:hover {
@@ -126,9 +126,7 @@
   background-color: #ffaf1f;
 }
 
-.button-yesNo{
-
-
+.button-yesNo {
   background-color: #86c28e;
   font-size: 0.5em;
   color: white;
@@ -136,9 +134,7 @@
   border-radius: 20px;
   padding: 40px 50px;
 
-  display: flex;
   font-family: inherit;
-  position: center;
   font-size: 1.3em;
 }
 
@@ -149,7 +145,7 @@
 }
 
 .button-yesNo.active {
-  background-color: #FFF8EE ; 
+  background-color: #fff8ee;
   color: #226f54;
 }
 
@@ -158,10 +154,8 @@
 }
 
 .button-yesNo:active {
-  background-color: #ffaf1f;; 
+  background-color: #ffaf1f;
 }
-
-
 
 #nameForm input {
   font-size: 0.5em;
@@ -252,18 +246,14 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
- 
 }
 
 #summary {
-
   position: absolute;
   top: 50%;
   left: 20%;
   transform: translate(-50%, -50%);
   font-size: xx-large;
-
 }
 
 .gender-selection-container {
@@ -280,10 +270,9 @@
   border: none;
   padding: 12px 25px;
   margin: 0 5px;
-  border-radius: 10px; 
+  border-radius: 10px;
   transition: all 0.3s ease;
   font-weight: bold;
-  
 }
 
 .gender-selection-container button:hover {
@@ -294,14 +283,12 @@
 .gender-selection-container button.selected {
   background-color: #ffffff;
   color: #86c28e;
-
 }
 
 .active-description {
   margin-top: 10px;
   font-style: italic;
   color: #ffffff;
-  
 }
 .photo-form-container {
   background-color: #226f54;
@@ -316,9 +303,8 @@
   margin: auto;
 }
 
-
 .photo-form-header {
-  color: #FFAF1F;
+  color: #ffaf1f;
   font-size: 3em;
 }
 
@@ -386,7 +372,6 @@
   max-width: 200px;
   max-height: 300px;
 }
-
 
 @media (max-width: 600px) {
   .photo-preview {

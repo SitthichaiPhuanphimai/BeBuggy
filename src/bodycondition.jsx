@@ -12,52 +12,54 @@ function BodyCondition({ goToNextStep, goToPreviousStep }) {
   };
 
   return (
-    <div>
+    <>
       <div className="centered">
-        <h2>
-          {" "}
-          Hvad er <span className="dog-name">{dogData.name}s </span>
-          kroptilstand?{" "}
-        </h2>
+        <div>
+          <h2>
+            Hvad er <span className="dog-name">{dogData.name}s</span>{" "}
+            kroptilstand?
+          </h2>
+        </div>
 
-        <button
-          className={`button-yesNo ${
-            lastClicked === "Undervægtig" ? "active" : ""
-          }`}
-          onClick={() => {
-            setCondition("Undervægtig");
-            setLastClicked("Undervægtig");
-            console.log("Undervægtig");
-          }}
-        >
-          Undervægtig
-        </button>
-        <button
-          className={`button-yesNo ${lastClicked === "Normal" ? "active" : ""}`}
-          onClick={() => {
-            setCondition("Normal");
-            setLastClicked("Normal");
-            console.log("Normal");
-          }}
-        >
-          Normal
-        </button>
-        <button
-          className={`button-yesNo ${
-            lastClicked === "Overvægtig" ? "active" : ""
-          }`}
-          onClick={() => {
-            setCondition("Overvægtig");
-            setLastClicked("Overvægtig");
-            console.log("Overvægtig");
-          }}
-        >
-          Overvægtig
-        </button>
+        <div className="button-container">
+          <button
+            className={`button-yesNo ${
+              lastClicked === "Undervægtig" ? "active" : ""
+            }`}
+            onClick={() => {
+              setCondition("Undervægtig");
+              setLastClicked("Undervægtig");
+            }}
+          >
+            Undervægtig
+          </button>
+          <button
+            className={`button-yesNo ${
+              lastClicked === "Normal" ? "active" : ""
+            }`}
+            onClick={() => {
+              setCondition("Normal");
+              setLastClicked("Normal");
+            }}
+          >
+            Normal
+          </button>
+          <button
+            className={`button-yesNo ${
+              lastClicked === "Overvægtig" ? "active" : ""
+            }`}
+            onClick={() => {
+              setCondition("Overvægtig");
+              setLastClicked("Overvægtig");
+            }}
+          >
+            Overvægtig
+          </button>
+        </div>
 
         <div className="button-container">
           <button className="button-back" onClick={goToPreviousStep}>
-            tilbage
+            Tilbage
           </button>
           <button className="button-next" onClick={handleNextStep}>
             Næste
@@ -67,7 +69,7 @@ function BodyCondition({ goToNextStep, goToPreviousStep }) {
 
       <img id="dog" src="src/assets/beBuggyDog.webp" alt="dog" />
       <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
-    </div>
+    </>
   );
 }
 

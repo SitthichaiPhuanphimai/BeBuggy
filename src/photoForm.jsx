@@ -1,7 +1,7 @@
-import React, { useState, useRef } from 'react';
-import { useDogForm } from './dogFormContext';
+import React, { useState, useRef } from "react";
+import { useDogForm } from "./dogFormContext";
 
-function PhotoForm({ goToNextStep, goToPreviousStep}) {
+function PhotoForm({ goToNextStep, goToPreviousStep }) {
   const [file, setFile] = useState(null);
   const [previewUrl, setPreviewUrl] = useState(null);
   const fileInputRef = useRef(null);
@@ -37,27 +37,38 @@ function PhotoForm({ goToNextStep, goToPreviousStep}) {
 
   return (
     <div className="photo-form-container">
-      <h1>{dogData.name}</h1>
+      <h1 className="dog-name">{dogData.name}</h1>
       <p>Hold snuden i sporet... Du er der næsten!</p>
       <div className="text-bubble">
-        <p>Sidste step på rejsen er et billede af {dogData.name} til hans personlige foderprofil</p>
+        <p>
+          Sidste step på rejsen er et billede af {dogData.name} til hans
+          personlige foderprofil
+        </p>
       </div>
-      <input 
+      <input
         type="file"
         ref={fileInputRef}
         onChange={handleFileChange}
-        style={{ display: 'none' }}
+        style={{ display: "none" }}
       />
-      <button className='button-upload' onClick={handleFileInputClick}>
+      <button className="button-yesNo" onClick={handleFileInputClick}>
         Vælg fil og upload
       </button>
-      {previewUrl && <img src={previewUrl} alt="Preview" className="photo-preview" />}
-      <div className='button-container'>
-        <button onClick={goToPreviousStep}>Tilbage</button>
-        <button onClick={handleNextClick}>Næste</button>
-        <button onClick={handleSkip}>Skip</button>
-      </div > 
-  {file && <p className="file-name">File selected: {file.name}</p>}
+      {previewUrl && (
+        <img src={previewUrl} alt="Preview" className="photo-preview" />
+      )}
+      <div className="button-container">
+        <button className="button-back" onClick={goToPreviousStep}>
+          Tilbage
+        </button>
+        <button className="button-next" onClick={handleNextClick}>
+          Næste
+        </button>
+        <button className="button-skip" onClick={handleSkip}>
+          Skip{" "}
+        </button>
+      </div>
+      {file && <p className="file-name">File selected: {file.name}</p>}
     </div>
   );
 }

@@ -77,7 +77,6 @@ function App() {
         />
       )}
 
-
       {step === 10 && (
         <Summary
           goToNextStep={goToNextStep}

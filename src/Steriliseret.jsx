@@ -19,28 +19,28 @@ function Steriliseret({ goToNextStep, goToPreviousStep }) {
           Er <span className="dog-name">{dogData.name} </span>Steriliseret eller
           kastreret?
         </h1>
-
-        <button
-          className={`button-yesNo ${lastClicked === "Ja" ? "active" : ""}`}
-          onClick={() => {
-            setSterilized("Ja");
-            setLastClicked("Ja");
-            console.log("true");
-          }}
-        >
-          Ja
-        </button>
-        <button
-          className={`button-yesNo ${lastClicked === "Nej" ? "active" : ""}`}
-          onClick={() => {
-            setSterilized("Nej");
-            setLastClicked("Nej");
-            console.log("false");
-          }}
-        >
-          Nej
-        </button>
-
+        <div className="button-container">
+          <button
+            className={`button-yesNo ${lastClicked === "Ja" ? "active" : ""}`}
+            onClick={() => {
+              setSterilized("Ja");
+              setLastClicked("Ja");
+              console.log("true");
+            }}
+          >
+            Ja
+          </button>
+          <button
+            className={`button-yesNo ${lastClicked === "Nej" ? "active" : ""}`}
+            onClick={() => {
+              setSterilized("Nej");
+              setLastClicked("Nej");
+              console.log("false");
+            }}
+          >
+            Nej
+          </button>
+        </div>
         <div className="button-container">
           <button className="button-back" onClick={goToPreviousStep}>
             tilbage

@@ -31,7 +31,7 @@ function ActiveForm({ goToNextStep, goToPreviousStep }) {
       <h2>
         Hvor aktiv er <span className="dog-name">{dogData.name}</span>?
       </h2>
-      <div className="active-selection-container">
+      <div className="button-container">
         {Object.keys(descriptions).map((activityLevel) => (
           <div key={activityLevel}>
             <button
@@ -52,7 +52,7 @@ function ActiveForm({ goToNextStep, goToPreviousStep }) {
         <button className="button-back" onClick={goToPreviousStep}>
           Tilbage
         </button>
-        <button className="button-next-double" onClick={handleNextClick}>
+        <button className="button-next" onClick={handleNextClick}>
           Næste
         </button>
       </div>

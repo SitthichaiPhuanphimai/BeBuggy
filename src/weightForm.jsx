@@ -60,12 +60,12 @@ const WeightSlider = ({ goToNextStep, goToPreviousStep }) => {
         <button className="button-back" onClick={goToPreviousStep}>
           tilbage
         </button>
-        <button className="button-next-double" onClick={handleNextClick}>
+        <button className="button-next" onClick={handleNextClick}>
           næste
         </button>
 
         <img id="dog" src="src/assets/beBuggyDog.webp" alt="dog" />
-            <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
+        <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
       </div>
     </>
   );

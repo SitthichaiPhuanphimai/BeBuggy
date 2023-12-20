@@ -38,7 +38,7 @@ function GenderForm({ goToNextStep, goToPreviousStep }) {
         <button className="button-back" onClick={goToPreviousStep}>
           Tilbage
         </button>
-        <button className="button-next-double" onClick={handleNextClick}>
+        <button className="button-next" onClick={handleNextClick}>
           Næste
         </button>
       </div>
