@@ -16,10 +16,10 @@ function GenderForm({ goToNextStep, goToPreviousStep }) {
 
   return (
     <>
-      <h2>
+      <h1 id="h1">
         Er <span className="dog-name">{dogData.name}</span> en sød hanhund eller
         hunhund?
-      </h2>
+      </h1>
       <div className="gender-selection-container">
         <button
           onClick={() => handleGenderSelect("Hankøn")}
@@ -34,7 +34,8 @@ function GenderForm({ goToNextStep, goToPreviousStep }) {
           ♀
         </button>
       </div>
-      <div className="button-container">
+      
+      <div  className="button-container" >
         <button className="button-back" onClick={goToPreviousStep}>
           Tilbage
         </button>

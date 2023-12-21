@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDogForm } from "./dogFormContext";
 
-function BodyCondition({ goToNextStep, goToPreviousStep }) {
+function BodyCondition({ goToNextStep,goToPreviousStep }) {
   const [condition, setCondition] = useState(null);
   const { dogData, updateData } = useDogForm();
   const [lastClicked, setLastClicked] = useState(null);
@@ -12,14 +12,13 @@ function BodyCondition({ goToNextStep, goToPreviousStep }) {
   };
 
   return (
-    <>
-      <div className="centered">
-        <div>
-          <h2>
-            Hvad er <span className="dog-name">{dogData.name}s</span>{" "}
-            kroptilstand?
-          </h2>
-        </div>
+    <div>
+      <div className="centered button-container" >
+        <h2>
+          {" "}
+          Hvad er <span className="dog-name">{dogData.name}s </span>
+          kroptilstand?{" "}
+        </h2>
 
         <div className="button-container">
           <button
@@ -57,14 +56,15 @@ function BodyCondition({ goToNextStep, goToPreviousStep }) {
           </button>
         </div>
 
-        <div className="button-container">
-          <button className="button-back" onClick={goToPreviousStep}>
-            Tilbage
-          </button>
-          <button className="button-next" onClick={handleNextStep}>
-            Næste
-          </button>
-        </div>
+        <div className="button-container" >
+        <button className="button-back" onClick={goToPreviousStep}>
+          Tilbage
+        </button>
+        <button className="button-next-double" onClick={handleNextStep}>
+          Næste
+        </button>
+      </div>
+
       </div>
 
       <img id="dog" src="src/assets/beBuggyDog.webp" alt="dog" />

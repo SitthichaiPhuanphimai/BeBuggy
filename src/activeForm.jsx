@@ -28,9 +28,9 @@ function ActiveForm({ goToNextStep, goToPreviousStep }) {
 
   return (
     <>
-      <h2>
+      <h1 id="h1">
         Hvor aktiv er <span className="dog-name">{dogData.name}</span>?
-      </h2>
+      </h1>
       <div className="button-container">
         {Object.keys(descriptions).map((activityLevel) => (
           <div key={activityLevel}>
@@ -48,6 +48,7 @@ function ActiveForm({ goToNextStep, goToPreviousStep }) {
           </div>
         ))}
       </div>
+      
       <div className="button-container">
         <button className="button-back" onClick={goToPreviousStep}>
           Tilbage

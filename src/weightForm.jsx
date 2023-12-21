@@ -38,7 +38,7 @@ const WeightSlider = ({ goToNextStep, goToPreviousStep }) => {
 
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", justifyContent: "center", marginTop:"10%" }}>
         <h2>
           Hvad er <span className="dog-name">{dogData.name}</span>'s vægt?
         </h2>

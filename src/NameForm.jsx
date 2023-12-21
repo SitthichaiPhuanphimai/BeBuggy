@@ -11,24 +11,23 @@ function NameForm({ goToNextStep }) {
     goToNextStep();
   };
 
-  return (
-    <div>
-      <h1 id="h1"> BeBuggy</h1>
-      <h2 id="h2"> Hvad er din hunds navn?</h2>
+    return (
+        <div style={{marginTop:"10%"}}>
+            
+            <h1 id="h1"> Hvad er din hunds navn?</h1>
 
-      <form id="nameForm" onSubmit={handleSubmit}>
-        <div>
-          <input
-            type="text"
-            placeholder="Hundens navn"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <button className="button-next" type="submit">
-            Næste
-          </button>
-        </div>
-      </form>
+            <form id="nameForm" onSubmit={handleSubmit}>
+                <div>
+                    <input 
+                        type="text" 
+                        placeholder="Hundens navn" 
+                        value={name} 
+                        onChange={(e) => setName(e.target.value)} 
+                        style={{width: "700px", height: "50px"}}
+                    />
+                    <button className='button-next' type="submit">Næste</button>
+                </div>
+            </form>
 
       <img id="dog" src="src/assets/beBuggyDog.webp" alt="dog" />
       <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />

@@ -8,16 +8,17 @@ export const DogFormProvider = ({ children }) => {
   const [dogData, setDogData] = useState({
     name: "",
     breed: "",
-    weight: 0,
-    age: 0,
-    sterilized: "",
-    condition: "",
-    gender: "",
-    activityLevel: "",
+    weight: null,
+    age: null,
+    sterilized: null,
+    condition: null,
+    active: null,
+    gender: null,
+    activityLevel: null
   });
 
   const updateData = (newData) => {
-    setDogData((prevDogData) => ({ ...prevDogData, ...newData }));
+    setDogData({ ...dogData, ...newData });
   };
 
   return (
