@@ -5,6 +5,8 @@
 
   color: #ffff;
   background-color: #226f54;
+  --background-color: #226f54;
+  --text-color: #86C28E ;
 }
 
 #dog {
@@ -18,6 +20,7 @@
 #emballage {
 
   position: absolute;
+  bottom: 0;
   right: 0;
   width: 850px;
   height: auto;
@@ -27,7 +30,7 @@
 #red{
 
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 38%;
   width: 300px;
   height: auto;
@@ -162,6 +165,29 @@
   background-color: #ffaf1f;; 
 }
 
+.button-order{
+  background-color: #ffaf1f;
+  font-size: 0.1em;
+  color: white;
+  border: 15px;
+  border-radius: 15px;
+  padding: 20px;
+  display: block;
+  font-family: inherit;
+  padding: 20px 20px;
+  font-size: 1.3em;
+  position: absolute;
+  bottom: 2%;
+  right: 43%;
+}
+
+.button-order:hover,
+.button-order:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+  background-color: #86c28e;
+}
+
 
 
 #nameForm input {
@@ -235,6 +261,7 @@
 
 .dog-name {
   color: #ffaf1f;
+  
 }
 
 .weight-label {
@@ -260,11 +287,41 @@
 #summary {
 
   position: absolute;
-  top: 50%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-  font-size: x-large;
+  top: 30%;
+  left: 2%;
+  font-size:25px;
 
+}
+
+#summary-h1{
+
+  position: absolute;
+  top: -7%;
+  left: 20%;
+  font-size:105px;
+  color: #ffaf1f;
+  max-width: 1050px;
+  max-height: auto;
+}
+
+#summary-h2{
+
+  position: absolute;
+  top: 17%;
+  left: 19%;
+  font-size:30px;
+  color: #FFF8EE;
+}
+
+#circle{
+
+  position: absolute;
+  top: 0.5%;
+  left: 1%;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: #86C28E ;
 }
 
 .gender-selection-container {
@@ -297,4 +354,5 @@
   color: #86c28e;
 
 }
+
 

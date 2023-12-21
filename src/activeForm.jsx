@@ -10,7 +10,7 @@ function ActiveForm({ goToNextStep, goToPreviousStep }) {
   };
 
   const handleNextClick = () => {
-    updateData({ active: selectedActive });
+    updateData({  activityLevel: selectedActive });
     goToNextStep();
   };
 
