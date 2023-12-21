@@ -48,7 +48,7 @@ function Summary() {
 
 
       <div>
-        <img id="red" src="src/assets/Red_blob.png" />
+        <img id="red" src="src/assets/Red_blob.png"/>
             <p style={{ position: 'absolute', top: '60%', left: '49%', transform: 'translate(-50%, -50%)',fontSize:"x-large" }}>
                 Anbefalet
             </p>

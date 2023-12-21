@@ -46,7 +46,7 @@ function Steriliseret({ goToNextStep, goToPreviousStep }) {
         </button>
         </div>
 
-        <div className="button-container" style={{marginTop:"5%"}}>
+        <div className="button-container" style={{marginTop:"25px"}}>
         <button className="button-back" onClick={goToPreviousStep}>
           Tilbage
         </button>

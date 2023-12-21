@@ -39,6 +39,7 @@ function DogBreedDropdown({ goToNextStep,goToPreviousStep }) {
         onChange={handleChange}
         
       />
+      <br />
       <div className="button-container">
       <button className="button-back" onClick={goToPreviousStep}>
                 Tilbage

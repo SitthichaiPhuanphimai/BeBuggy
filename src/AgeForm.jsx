@@ -2,49 +2,65 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import { useDogForm } from "./dogFormContext";
 
-function AgeForm({ goToNextStep,goToPreviousStep }) {
-
-
-    const [age, setAge] = useState(null);
-    const [lastClicked, setLastClicked] = useState(null);
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-    const { dogData, updateData } = useDogForm();
+function AgeForm({ goToNextStep, goToPreviousStep }) {
+  const [age, setAge] = useState(null);
+  const [lastClicked, setLastClicked] = useState(null);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const { dogData, updateData } = useDogForm();
 
   const handleNextStep = () => {
     updateData({ age });
     goToNextStep();
   };
 
-    return ( 
+  return (
+    <>
+    <h1 id="h1">
+          Hvor gammel er <span className="dog-name">{dogData.name} </span>?
+        </h1>
 
-        
-        <>
+      <div className="ageform-button-container">
+        <button
+          className={`button-yesNo ${lastClicked === "hvalp" ? "active" : ""}`}
+          onClick={() => {
+            setLastClicked("hvalp");
+            setModalIsOpen(true);
+          }}
+        >
+          Hvalp
+        </button>
+        <button
+          className={`button-yesNo ${lastClicked === "voksen" ? "active" : ""}`}
+          onClick={() => {
+            setLastClicked("voksen");
+            setAge("voksen");
+          }}
+        >
+          {" "}
+          Voksen
+        </button>
+        <button
+          className={`button-yesNo ${lastClicked === "senior" ? "active" : ""}`}
+          onClick={() => {
+            setLastClicked("senior");
+            setModalIsOpen(true);
+          }}
+        >
+          Senior
+        </button>
+        </div><br />
+
+        <div className="button-container">
+          <button className="button-back" onClick={goToPreviousStep}>
+            Tilbage
+          </button>
+          <button className="button-next" onClick={handleNextStep}>
+            Næste
+          </button>
+        </div>
       
-
-        <div className='centered button-container'>
-
-        <h1 id='h1'>Hvor gammel er  <span className="dog-name">{dogData.name} </span>?</h1>
-
-            
-            <button className={`button-yesNo ${lastClicked === 'hvalp' ? 'active' : ''}`} onClick={() => { setLastClicked('hvalp'); setModalIsOpen(true); }}>Hvalp</button>
-            <button className={`button-yesNo ${lastClicked === 'voksen' ? 'active' : ''}`}  onClick={() => {  setLastClicked('voksen'); setAge('voksen')}}> Voksen</button>
-            <button className={`button-yesNo ${lastClicked === 'senior' ? 'active' : ''}`} onClick={() => { setLastClicked('senior'); setModalIsOpen(true); }}>Senior</button>
-
-            
-
-
-            <div className="button-container">
-            <button className="button-back" onClick={goToPreviousStep}>
-                Tilbage
-                </button>
-                 <button className="button-next" onClick={handleNextStep}>
-                     Næste
-                        </button>
-             </div>
-
-             </div>
-            <img id="dog-top-left" src="src/assets/beBuggyDog.webp" alt="dog" />
-            <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
+      <img id="dog-top-left" src="src/assets/beBuggyDog.webp" alt="dog" />
+      <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
 
       <Modal
         isOpen={modalIsOpen}
@@ -80,14 +96,10 @@ function AgeForm({ goToNextStep,goToPreviousStep }) {
           <input type="submit" value="Send" />
         </form>
 
-  <button onClick={() => setModalIsOpen(false)}>Ok!</button>
-</Modal>
-
- </>
-
-            
-
-     );
+        <button onClick={() => setModalIsOpen(false)}>Ok!</button>
+      </Modal>
+    </>
+  );
 }
 
 export default AgeForm;

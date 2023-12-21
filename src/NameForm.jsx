@@ -19,13 +19,16 @@ function NameForm({ goToNextStep }) {
             <form id="nameForm" onSubmit={handleSubmit}>
                 <div>
                     <input 
-                        type="text" 
+                        type="text"
+                        required
                         placeholder="Hundens navn" 
                         value={name} 
                         onChange={(e) => setName(e.target.value)} 
-                        style={{width: "700px", height: "50px"}}
+                        style={{width: "700px", height: "50px", textAlign: "center"}}
                     />
+                    <div className="button-container">
                     <button className='button-next' type="submit">Næste</button>
+                </div>
                 </div>
             </form>
 

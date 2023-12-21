@@ -55,7 +55,7 @@ function BodyCondition({ goToNextStep,goToPreviousStep }) {
           >
             Overvægtig
           </button>
-        </div>
+        </div><br />
 
         <div className="button-container" >
         <button className="button-back" onClick={goToPreviousStep}>

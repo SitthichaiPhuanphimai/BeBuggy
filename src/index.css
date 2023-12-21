@@ -68,19 +68,22 @@
   font-size: 3em;
 }
 
+
 .button-container {
+  max-width: 500px;
+  margin-top: 15px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  gap: 10px;
 }
 
 .button-next {
   background-color: #86c28e;
-  font-size: 1.3em;
+  font-size: 20px;
+  margin-left: 10px;
   color: white;
   border: 20px;
   border-radius: 20px;
-  margin: auto;
   padding: 40px 50px;
   display: block;
   font-family: inherit;
@@ -96,8 +99,9 @@
   padding: 30px;
   display: block;
   font-family: inherit;
-  padding: 40px 50px;
+  padding: 40px;
   font-size: 1.3em;
+  margin-left: 10px;
 }
 
 .button-next:hover,
@@ -107,17 +111,16 @@
   background-color: #86c28e;
 }
 
+
 .button-back {
   background-color: #ffaf1f;
-  font-size: 1em;
+  font-size: 20px;
   color: white;
   border: 20px;
   border-radius: 20px;
-  margin: auto;
-  padding: 30px;
+  padding: 40px;
   display: block;
   font-family: inherit;
-  margin: 20px 10px;
 }
 
 .button-skip {
@@ -151,10 +154,11 @@
   border: 20px;
   border-radius: 20px;
   padding: 40px 50px;
-
   font-family: inherit;
   font-size: 1.3em;
+  margin-left: 10px;
 }
+
 
 .button-yesNo:hover {
   transform: scale(1.05);
@@ -290,10 +294,27 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-  
- 
 }
+
+.ageform-button-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 500px;
+  margin-top: 15px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.active-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 
 #summary {
 
@@ -366,7 +387,11 @@
 }
 
 .active-description {
-  margin-top: 10px;
+  max-width: 150px;
+  word-wrap: break-word;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
   font-style: italic;
   color: #ffffff;
 }
