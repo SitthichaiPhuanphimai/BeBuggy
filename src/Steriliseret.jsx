@@ -53,10 +53,12 @@ function Steriliseret({ goToNextStep, goToPreviousStep }) {
         <button className="button-next-double" onClick={handleNextStep}>
           Næste
         </button>
+        
       </div>
-
       <img id="dog-left" src="src/assets/beBuggyDog.webp" alt="dog" />
       <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
+
+      
     
     </>
   );
