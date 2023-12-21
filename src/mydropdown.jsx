@@ -14,6 +14,7 @@ function DogBreedDropdown({ goToNextStep,goToPreviousStep }) {
     control: (styles) => ({ ...styles, fontFamily: "'Chelsea Market', cursive", width: 300 }),
     option: (styles) => ({ ...styles, fontFamily: "'Chelsea Market', cursive", color: 'black' }),
     singleValue: (styles) => ({ ...styles, fontFamily: "'Chelsea Market', cursive", color: 'black' }),
+    
    
 };
 
@@ -27,16 +28,17 @@ function DogBreedDropdown({ goToNextStep,goToPreviousStep }) {
   };
 
   return (
-    <div>
+    <>
 
-      <div className="centered">
-        <h2> Hvad er <span className="dog-name">{dogData.name}s </span>race?</h2>
-      <Select
+      <div className="centered button-container">
+        <h1> Hvad er <span className="dog-name">{dogData.name}s </span>race?</h1>
+      <Select 
         options={options}
         isSearchable
         styles={customStyles}
         placeholder="Select or type a breed"
         onChange={handleChange}
+        
       />
       <div className="button-container">
       <button className="button-back" onClick={goToPreviousStep}>
@@ -54,7 +56,7 @@ function DogBreedDropdown({ goToNextStep,goToPreviousStep }) {
 
   
 
-    </div>
+    </>
   );
 }
 

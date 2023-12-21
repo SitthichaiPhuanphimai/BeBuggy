@@ -67,6 +67,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 
   font-size: 3em;
 }
@@ -281,6 +282,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   
+  
  
 }
 
@@ -355,4 +357,106 @@
 
 }
 
+.active-description {
+  margin-top: 10px;
+  font-style: italic;
+  color: #ffffff;
+}
+.photo-form-container {
+  background-color: #226f54;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Add space between elements */
+  max-width: 600px;
+  margin: auto;
+}
 
+.photo-form-header {
+  color: #ffaf1f;
+  font-size: 3em;
+}
+
+.photo-form-instructions,
+.photo-form-step {
+  text-align: center;
+}
+
+.photo-form-upload-btn {
+  background-color: #86c28e;
+  color: #ffffff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 20px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.photo-form-upload-btn:hover {
+  background-color: #ffaf1f;
+}
+
+.photo-form-action-btns {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Spread the buttons across the container width */
+}
+
+.photo-form-action-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.photo-form-action-btn.skip {
+  background-color: #ff0000; /* Red for skip */
+}
+
+.photo-form-action-btn.back {
+  background-color: #ffaf1f; /* Orange for back */
+}
+
+.photo-form-action-btn.next {
+  background-color: #86c28e; /* Green for next */
+}
+
+.photo-form-action-btn:hover {
+  filter: brightness(0.9);
+}
+
+.photo-form-action-btn.upload {
+  background-color: #86c28e; /* Green for upload */
+  font-size: 1.3em; /* Slightly larger font for upload */
+  padding: 20px 40px; /* Larger button size for upload */
+}
+
+.photo-preview {
+  position: absolute;
+  right: 300px;
+  top: 150px;
+  margin-top: 0;
+  margin-left: 20px; /* Add some space between the image and the form elements */
+  max-width: 200px;
+  max-height: 300px;
+}
+
+@media (max-width: 600px) {
+  .photo-preview {
+    position: absolute;
+    right: auto;
+    bottom: 0;
+    top: auto; /* Override the top value */
+  }
+}
+
+.file-name {
+  max-width: 200px; /* Adjust as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

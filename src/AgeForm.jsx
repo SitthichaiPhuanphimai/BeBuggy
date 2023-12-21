@@ -18,11 +18,14 @@ function AgeForm({ goToNextStep,goToPreviousStep }) {
     return ( 
 
         
-        <div>
-        <div className='centered'>
+        <>
+      
 
-            <h1>Hvor gammel er  <span className="dog-name">{dogData.name} </span>?</h1>
+        <div className='centered button-container'>
 
+        <h1 id='h1'>Hvor gammel er  <span className="dog-name">{dogData.name} </span>?</h1>
+
+            
             <button className={`button-yesNo ${lastClicked === 'hvalp' ? 'active' : ''}`} onClick={() => { setLastClicked('hvalp'); setModalIsOpen(true); }}>Hvalp</button>
             <button className={`button-yesNo ${lastClicked === 'voksen' ? 'active' : ''}`}  onClick={() => {  setLastClicked('voksen'); setAge('voksen')}}> Voksen</button>
             <button className={`button-yesNo ${lastClicked === 'senior' ? 'active' : ''}`} onClick={() => { setLastClicked('senior'); setModalIsOpen(true); }}>Senior</button>
@@ -74,7 +77,7 @@ function AgeForm({ goToNextStep,goToPreviousStep }) {
   <button onClick={() => setModalIsOpen(false)}>Ok!</button>
 </Modal>
 
- </div>
+ </>
 
             
 

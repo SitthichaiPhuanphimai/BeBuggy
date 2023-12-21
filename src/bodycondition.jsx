@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDogForm } from "./dogFormContext";
 
-function BodyCondition({ goToNextStep }) {
+function BodyCondition({ goToNextStep,goToPreviousStep }) {
   const [condition, setCondition] = useState(null);
   const { dogData, updateData } = useDogForm();
   const [lastClicked, setLastClicked] = useState(null);
@@ -13,7 +13,7 @@ function BodyCondition({ goToNextStep }) {
 
   return (
     <div>
-      <div className="centered">
+      <div className="centered button-container" >
         <h2>
           {" "}
           Hvad er <span className="dog-name">{dogData.name}s </span>
@@ -55,11 +55,15 @@ function BodyCondition({ goToNextStep }) {
           Overvægtig
         </button>
 
-        <div className="button-container">
-          <button className="button-next" onClick={handleNextStep}>
-            Næste
-          </button>
-        </div>
+        <div className="button-container" >
+        <button className="button-back" onClick={goToPreviousStep}>
+          Tilbage
+        </button>
+        <button className="button-next-double" onClick={handleNextStep}>
+          Næste
+        </button>
+      </div>
+
       </div>
 
       <img id="dog" src="src/assets/beBuggyDog.webp" alt="dog" />

@@ -10,6 +10,7 @@ import AgeForm from "./AgeForm";
 import BodyCondition from "./bodycondition";
 import Summary from "./Summary";
 import ActiveForm from "./activeForm";
+import PhotoForm from "./photoForm";
 
 function App() {
   const [step, setStep] = useState(1);
@@ -39,7 +40,8 @@ function App() {
       {step === 6 && <AgeForm goToNextStep={goToNextStep} goToPreviousStep={goToPreviousStep}/>}
       {step === 7 && <BodyCondition goToNextStep={goToNextStep} goToPreviousStep={goToPreviousStep}/>}
       {step === 8 && <ActiveForm goToNextStep={goToNextStep} goToPreviousStep={goToPreviousStep} />}
-      {step === 9 && <Summary goToNextStep={goToNextStep} goToPreviousStep={goToPreviousStep} />}
+      {step === 9 && <PhotoForm goToNextStep={goToNextStep} goToPreviousStep={goToPreviousStep} />}
+      {step === 10 && <Summary goToNextStep={goToNextStep} goToPreviousStep={goToPreviousStep} />}
 
       
       
