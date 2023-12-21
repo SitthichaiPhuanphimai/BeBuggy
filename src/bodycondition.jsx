@@ -12,6 +12,7 @@ function BodyCondition({ goToNextStep,goToPreviousStep }) {
   };
 
   return (
+    
     <div>
       <div className="centered button-container" >
         <h2>
@@ -69,7 +70,7 @@ function BodyCondition({ goToNextStep,goToPreviousStep }) {
 
       <img id="dog" src="src/assets/beBuggyDog.webp" alt="dog" />
       <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
-    </>
+    </div>
   );
 }
 
