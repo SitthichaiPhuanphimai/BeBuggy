@@ -4,7 +4,7 @@ import NameForm from "./NameForm";
 import DogBreedDropdown from "./mydropdown";
 import WeightSlider from "./weightForm";
 import GenderForm from "./genderForm";
-import Steriliseret from "./steriliseret";
+import Steriliseret from "./Steriliseret";
 import { DogFormProvider } from "./dogFormContext";
 import AgeForm from "./AgeForm";
 import BodyCondition from "./bodycondition";

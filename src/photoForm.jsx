@@ -14,8 +14,6 @@ function PhotoForm({ goToNextStep, goToPreviousStep }) {
       setFile(selectedFile);
       setPreviewUrl(URL.createObjectURL(selectedFile));
       // Implement upload to the backend right after file selection
-      // This can be a function to upload the file
-      // uploadFile(selectedFile);
     }
   };
 
