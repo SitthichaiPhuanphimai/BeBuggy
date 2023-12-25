@@ -34,6 +34,7 @@ function PhotoForm({ goToNextStep, goToPreviousStep }) {
   };
 
   return (
+    <>
     <div className="photo-form-container">
       <h1 className="dog-name">{dogData.name}</h1>
       <p>Hold snuden i sporet... Du er der næsten!</p>
@@ -68,6 +69,12 @@ function PhotoForm({ goToNextStep, goToPreviousStep }) {
       </div>
       {file && <p className="file-name">File selected: {file.name}</p>}
     </div>
+    );
+
+    <img id="dog-left" src="src/assets/beBuggyDog.webp" alt="dog" />
+      <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
+    </>
+
   );
 }
 

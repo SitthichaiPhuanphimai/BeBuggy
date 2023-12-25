@@ -49,15 +49,15 @@ function Summary() {
 
       <div>
         <img id="red" src="src/assets/Red_blob.png"/>
-            <p style={{ position: 'absolute', top: '60%', left: '49%', transform: 'translate(-50%, -50%)',fontSize:"x-large" }}>
+            <p style={{ position: 'absolute', top: '60%', left: '47%', transform: 'translate(-50%, -50%)',fontSize:"x-large" }}>
                 Anbefalet
             </p>
 
-                    <p style={{ position: 'absolute', top: '65%', left: '49%', transform: 'translate(-50%, -50%)', fontSize:"x-large" }}>
+                    <p style={{ position: 'absolute', top: '63%', left: '47%', transform: 'translate(-50%, -50%)', fontSize:"x-large" }}>
                 Fodermændge:
                     </p>
 
-                    <p style={{ position: 'absolute', top: '72%', left: '49%', transform: 'translate(-50%, -50%)',fontSize:"xx-large", color: 'var(--text-color)'}}>
+                    <p style={{ position: 'absolute', top: '66%', left: '47%', transform: 'translate(-50%, -50%)',fontSize:"xx-large", color: 'var(--text-color)'}}>
                         {" "}
           <span>{calculateFoodPerKilo()} g/dag</span>{" "}
         </p>

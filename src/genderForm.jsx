@@ -34,8 +34,8 @@ function GenderForm({ goToNextStep, goToPreviousStep }) {
           ♀
         </button>
       </div>
-      
-      <div  className="button-container" >
+
+      <div className="button-container">
         <button className="button-back" onClick={goToPreviousStep}>
           Tilbage
         </button>
@@ -43,6 +43,8 @@ function GenderForm({ goToNextStep, goToPreviousStep }) {
           Næste
         </button>
       </div>
+      <img id="dog-left" src="src/assets/beBuggyDog.webp" alt="dog" />
+      <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
     </>
   );
 }
