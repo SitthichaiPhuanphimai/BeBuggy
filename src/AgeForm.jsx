@@ -59,8 +59,7 @@ function AgeForm({ goToNextStep, goToPreviousStep }) {
           </button>
         </div>
       
-      <img id="dog-top-left" src="src/assets/beBuggyDog.webp" alt="dog" />
-      <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
+    
 
       <Modal
         isOpen={modalIsOpen}
@@ -98,7 +97,11 @@ function AgeForm({ goToNextStep, goToPreviousStep }) {
 
         <button onClick={() => setModalIsOpen(false)}>Ok!</button>
       </Modal>
+
+      <img id="dog-top-left" src="src/assets/beBuggyDog.webp" alt="dog" />
+      <img id="logo" src="src/assets/BeBuggy_logo.png" alt="logo" />
     </>
+    
   );
 }
 

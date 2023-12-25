@@ -28,7 +28,7 @@
 #red {
   position: absolute;
   top: 55%;
-  left: 38%;
+  left: 47%;
   width: 300px;
   height: auto;
 }
@@ -42,6 +42,9 @@
   transform: rotate(40deg);
 }
 
+@media screen and (min-width: 800px) {
+  
+
 #dog-top-left {
   position: absolute;
   top: -50px;
@@ -49,6 +52,7 @@
   width: 300px;
   height: 300px;
   transform: rotate(140deg);
+}
 }
 
 #logo {
@@ -327,7 +331,7 @@
 #summary-h1{
 
   position: absolute;
-  top: -7%;
+  top: 4%;
   left: 20%;
   font-size:105px;
   color: #ffaf1f;
@@ -347,7 +351,7 @@
 #circle{
 
   position: absolute;
-  top: 0.5%;
+  top: 3.5%;
   left: 1%;
   width: 220px;
   height: 220px;
@@ -499,19 +503,81 @@
   padding: 10px; 
   border-radius: 5px; 
 }
+.recommendation-container {
+  position: absolute;
+  top: 60%; /* Adjust based on your layout needs */
+  left: 43%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the container */
+  width: 300px; /* Match the width of the red blob image */
+  height: auto;
+  z-index: 10; /* Ensure it's above other elements */
+}
 
+#red {
+  width: 100%; /* Use 100% to ensure it's fully contained within its parent */
+  height: auto;
+}
 
-@media only screen and (max-width: 390px) {
+.recommendation-text {
+  position: absolute;
+  
+  top: 120px;
+  left: 97%;
+  transform: translate(-50%, -50%); /* Center the text block within the container */
+  text-align: center;
+  width: 100%; /* Ensure it doesn't overflow the red blob */
+}
+
+.recommendation-text p {
+  margin:  0.5em 0;
+  color: white; /* or any other color that fits your design */
+  font-size: 1.6em; /* Adjust the font size as needed */
+}
+
+.recommendation-text p:nth-child(1), .recommendation-text p:nth-child(2) {
+  font-size: 1.3em; /* Smaller text for these elements */
+}
+
+.recommendation-text p:nth-child(3) {
+  font-size: 1.8em; /* Larger text for the amount */
+  font-weight: bold; /* Make it bold */
+  color: var(--text-color); /* Use the defined CSS variable */
+}
+
+@media only screen and (max-width: 450px) {
+
+  
 
   #dog, #dog-left, #dog-top-left {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%; /* Adjust as necessary */
+    width: 50%; /* Adjust as necessary */
     height: auto; /* Adjust as necessary */
 }
 
+#emballage, #circle, #red {
+  width: 50%; /* make images responsive */
+  height: auto;
+  position: relative; /* or use flexbox/grid */
+}
+
+#summary {
+  position: relative; /* switch from absolute to relative or other layout strategies */
+  padding: 10px;
+  font-size: 1em; /* adjust font size */
+}
+
+h1, h2, p, span {
+  font-size: 1em; /* adjust heading and paragraph text size */
+}
+
+
+.button-order {
+  padding: 10px;
+  font-size: 0.8em; /* adjust button size for easier touch */
+}
 
 #logo {
   position: fixed; 
@@ -525,12 +591,6 @@
       font-size: 14px;
   }
 
-   #emballage, #red, #dog-left, #dog-top-left{
-      position: static; 
-      width: 100%; 
-      height: auto;
-      transform: none;
-  }
 
   #nameForm {
       flex-direction: column; 
