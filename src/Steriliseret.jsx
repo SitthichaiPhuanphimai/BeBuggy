@@ -29,7 +29,6 @@ function Steriliseret({ goToNextStep, goToPreviousStep }) {
           onClick={() => {
             setSterilized("Ja");
             setLastClicked("Ja");
-            console.log("true");
           }}
         >
           Ja
@@ -39,7 +38,6 @@ function Steriliseret({ goToNextStep, goToPreviousStep }) {
           onClick={() => {
             setSterilized("Nej");
             setLastClicked("Nej");
-            console.log("false");
           }}
         >
           Nej
@@ -50,7 +48,7 @@ function Steriliseret({ goToNextStep, goToPreviousStep }) {
         <button className="button-back" onClick={goToPreviousStep}>
           Tilbage
         </button>
-        <button className="button-next-double" onClick={handleNextStep}>
+        <button className="button-next" onClick={handleNextStep}>
           Næste
         </button>
         

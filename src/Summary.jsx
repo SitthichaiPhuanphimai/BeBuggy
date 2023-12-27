@@ -14,7 +14,6 @@ function Summary() {
       </div>
 
       <div id="summary">
-        {/* Dog information details */}
         <p>Navn: <span className="dog-name">{dogData.name}</span></p>
         <p>Race: <span className="dog-name">{dogData.breed}</span></p>
         <p>Vægt: <span className="dog-name">{dogData.weight}</span></p>
@@ -23,8 +22,6 @@ function Summary() {
         <p>Steriliseret: <span className="dog-name">{dogData.sterilized}</span></p>
         <p>Kropstilstand: <span className="dog-name">{dogData.condition}</span></p>
         <p>Aktivitetsniveau: <span className="dog-name">{dogData.activityLevel}</span></p>
-
-        {/* ... other details ... */}
       </div>
 
       <img id="circle" src="src/assets/beBuggyDog.webp" alt="dog" />

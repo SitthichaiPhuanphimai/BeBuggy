@@ -61,7 +61,7 @@ function BodyCondition({ goToNextStep,goToPreviousStep }) {
         <button className="button-back" onClick={goToPreviousStep}>
           Tilbage
         </button>
-        <button className="button-next-double" onClick={handleNextStep}>
+        <button className="button-next" onClick={handleNextStep}>
           Næste
         </button>
       </div>
